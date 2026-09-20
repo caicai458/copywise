@@ -44,8 +44,8 @@ export interface UsageInfo {
 
 export const PLAN_LIMITS: Record<SubscriptionPlan, number> = {
   free: 5,
-  pro_monthly: -1, // unlimited
-  pro_yearly: -1,
+  pro_monthly: 100, // 每天100次，控制成本红线
+  pro_yearly: 100,
 };
 
 export const CONTENT_TYPE_LABELS: Record<ContentType, string> = {

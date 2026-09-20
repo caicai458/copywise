@@ -88,7 +88,7 @@ export function PricingCards({ plan }: { plan: SubscriptionPlan }) {
             <span className="text-muted-foreground">/mo</span>
           </div>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>• Unlimited AI copy generations</li>
+            <li>• 100 AI copy generations per day</li>
             <li>• All 5 content types</li>
             <li>• Priority access</li>
           </ul>

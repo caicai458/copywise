@@ -62,6 +62,7 @@ export async function generateCopy(
   }
 
   const data = await response.json();
+  console.log("Zhipu API response:", JSON.stringify(data).substring(0, 500));
   const content = data.choices?.[0]?.message?.content || "";
   const tokensUsed = data.usage?.total_tokens || 0;
 

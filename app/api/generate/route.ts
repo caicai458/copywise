@@ -60,26 +60,27 @@ export async function POST(request: NextRequest) {
   const plan = subscription?.plan ?? "free";
   const dailyLimit = PLAN_LIMITS[plan];
 
-  // Enforce daily limit for non-unlimited plans
-  if (dailyLimit > 0) {
-    const start = getStartOfDay().toISOString();
-    const end = getEndOfDay().toISOString();
+  // Enforce daily limit
+  const start = getStartOfDay().toISOString();
+  const end = getEndOfDay().toISOString();
 
-    const { count } = await supabase
-      .from("generations")
-      .select("*", { count: "exact", head: true })
-      .eq("user_id", user.id)
-      .gte("created_at", start)
-      .lte("created_at", end);
+  const { count } = await supabase
+    .from("generations")
+    .select("*", { count: "exact", head: true })
+    .eq("user_id", user.id)
+    .gte("created_at", start)
+    .lte("created_at", end);
 
-    const usedToday = count ?? 0;
+  const usedToday = count ?? 0;
 
-    if (usedToday >= dailyLimit) {
-      return NextResponse.json(
-        { error: "Daily limit reached. Upgrade to Pro for unlimited generations." },
-        { status: 429 }
-      );
-    }
+  if (usedToday >= dailyLimit) {
+    const errorMsg = plan === "free"
+      ? "Daily limit reached. Upgrade to Pro for 100 generations per day."
+      : "Daily limit reached. You've used your 100 generations for today.";
+    return NextResponse.json(
+      { error: errorMsg },
+      { status: 429 }
+    );
   }
 
   // Call AI

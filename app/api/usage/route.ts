@@ -27,31 +27,35 @@ export async function GET() {
 
   const subscription = (subData as Subscription | null) ?? null;
   const plan = subscription?.plan ?? "free";
-  const dailyLimit = PLAN_LIMITS[plan];
-  const isUnlimited = dailyLimit < 0;
+  const baseLimit = PLAN_LIMITS[plan];
 
-  let usedToday = 0;
-  if (!isUnlimited) {
-    const start = getStartOfDay().toISOString();
-    const end = getEndOfDay().toISOString();
+  // 查询用户的推荐奖励（每个推荐 +5 次/天）
+  const { count: referralCount } = await supabase
+    .from("referrals")
+    .select("*", { count: "exact", head: true })
+    .eq("referrer_id", user.id);
 
-    const { count } = await supabase
-      .from("generations")
-      .select("*", { count: "exact", head: true })
-      .eq("user_id", user.id)
-      .gte("created_at", start)
-      .lte("created_at", end);
+  const bonusLimit = (referralCount ?? 0) * 5;
+  const dailyLimit = baseLimit + bonusLimit;
 
-    usedToday = count ?? 0;
-  }
+  const start = getStartOfDay().toISOString();
+  const end = getEndOfDay().toISOString();
 
-  const remaining = isUnlimited ? -1 : Math.max(0, dailyLimit - usedToday);
+  const { count } = await supabase
+    .from("generations")
+    .select("*", { count: "exact", head: true })
+    .eq("user_id", user.id)
+    .gte("created_at", start)
+    .lte("created_at", end);
+
+  const usedToday = count ?? 0;
+  const remaining = Math.max(0, dailyLimit - usedToday);
 
   const usage: UsageInfo = {
     used_today: usedToday,
-    daily_limit: isUnlimited ? -1 : dailyLimit,
+    daily_limit: dailyLimit,
     remaining,
-    is_unlimited: isUnlimited,
+    is_unlimited: false,
     plan,
   };
 

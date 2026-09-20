@@ -98,7 +98,7 @@ export default async function BillingPage() {
           <div>
             <h2 className="text-lg font-semibold">Upgrade to Pro</h2>
             <p className="text-sm text-muted-foreground">
-              Get unlimited generations and unlock all content types.
+              Get 100 generations per day and unlock all content types.
             </p>
           </div>
           <PricingCards plan={plan} />

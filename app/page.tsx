@@ -18,6 +18,7 @@ import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
 import { PricingCards } from "@/components/marketing/pricing-cards";
 import { FaqAccordion, type FaqItem } from "@/components/marketing/faq-accordion";
+import { ShareButtons } from "@/components/marketing/share-buttons";
 
 const FEATURES = [
   {
@@ -128,8 +129,8 @@ export default function Home() {
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button size="lg" asChild>
-                  <Link href="/signup">
-                    Start Generating Free
+                  <Link href="/try">
+                    Try Free No Signup
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -138,8 +139,11 @@ export default function Home() {
                 </Button>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                No credit card required · 5 free generations daily
+                3 free trial generations · No credit card required
               </p>
+              <div className="mt-8 flex justify-center">
+                <ShareButtons size="sm" />
+              </div>
             </div>
 
             {/* Mock generation card */}
@@ -313,8 +317,8 @@ export default function Home() {
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <Button size="lg" variant="secondary" asChild>
-                    <Link href="/signup">
-                      Start Generating Free
+                    <Link href="/try">
+                      Try Free No Signup
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>
@@ -326,6 +330,12 @@ export default function Home() {
                   >
                     <Link href="/pricing">View Pricing</Link>
                   </Button>
+                </div>
+                <div className="mt-8 flex justify-center">
+                  <ShareButtons
+                    size="sm"
+                    text="Just found Copywise - AI copywriting tool that writes cold emails, social posts, and ad copy in seconds. Free to try!"
+                  />
                 </div>
               </CardContent>
             </Card>

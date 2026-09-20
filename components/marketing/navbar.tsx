@@ -61,7 +61,7 @@ export function Navbar() {
             <Link href="/login">Log in</Link>
           </Button>
           <Button size="sm" asChild>
-            <Link href="/signup">Get Started</Link>
+            <Link href="/try">Try Free</Link>
           </Button>
         </div>
 
@@ -98,8 +98,8 @@ export function Navbar() {
                 </Link>
               </Button>
               <Button asChild>
-                <Link href="/signup" onClick={() => setOpen(false)}>
-                  Get Started
+                <Link href="/try" onClick={() => setOpen(false)}>
+                  Try Free
                 </Link>
               </Button>
             </div>

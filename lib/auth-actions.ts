@@ -30,7 +30,8 @@ export async function signIn(
 
 export async function signUp(
   email: string,
-  password: string
+  password: string,
+  refCode?: string | null
 ): Promise<AuthResult & { needsEmailVerification?: boolean }> {
   const supabase = await createClient();
 
@@ -38,7 +39,7 @@ export async function signUp(
     email,
     password,
     options: {
-      emailRedirectTo: `${process.env.NEXT_PUBLIC_APP_URL || ""}/auth/callback`,
+      emailRedirectTo: `${process.env.NEXT_PUBLIC_APP_URL || ""}/auth/callback?ref=${refCode || ""}`,
     },
   });
 

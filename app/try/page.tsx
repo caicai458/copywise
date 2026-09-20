@@ -1,16 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import {
-  Loader2,
-  Sparkles,
-  Copy,
-  Check,
-  RefreshCw,
-  AlertTriangle,
-  ArrowUpCircle,
-} from "lucide-react";
+import { Loader2, Sparkles, Copy, Check, RefreshCw, AlertTriangle, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
@@ -24,10 +16,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CONTENT_TYPE_LABELS, type ContentType, type UsageInfo } from "@/lib/types";
-import { ShareButtons } from "@/components/marketing/share-buttons";
+import { CONTENT_TYPE_LABELS, type ContentType } from "@/lib/types";
 
 const contentTypes = Object.entries(CONTENT_TYPE_LABELS) as [ContentType, string][];
+const TRIAL_LIMIT = 3;
 
 interface GenerateResponse {
   content: string;
@@ -35,38 +27,23 @@ interface GenerateResponse {
   model: string;
 }
 
-export default function DashboardPage() {
+export default function TryPage() {
   const [contentType, setContentType] = useState<ContentType>("cold_email");
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<GenerateResponse | null>(null);
   const [copied, setCopied] = useState(false);
-  const [usage, setUsage] = useState<UsageInfo | null>(null);
+  const [trialUsed, setTrialUsed] = useState(0);
 
-  const fetchUsage = useCallback(async () => {
-    try {
-      const res = await fetch("/api/usage");
-      if (res.ok) {
-        const data = (await res.json()) as UsageInfo;
-        setUsage(data);
-      }
-    } catch {
-      // ignore — usage card will show as unavailable
+  // 从 localStorage 读取试用次数
+  useEffect(() => {
+    const used = localStorage.getItem("trial_generations");
+    if (used) {
+      setTrialUsed(parseInt(used));
     }
   }, []);
 
-  useEffect(() => {
-    let cancelled = false;
-    fetch("/api/usage")
-      .then((res) => (res.ok ? (res.json() as Promise<UsageInfo>) : null))
-      .then((data) => {
-        if (data && !cancelled) setUsage(data);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const trialRemaining = TRIAL_LIMIT - trialUsed;
 
   async function handleGenerate(isRegenerate = false) {
     if (!prompt.trim()) {
@@ -74,9 +51,14 @@ export default function DashboardPage() {
       return;
     }
 
+    if (trialRemaining <= 0 && !isRegenerate) {
+      toast.error("Trial limit reached. Please sign up to continue.");
+      return;
+    }
+
     setLoading(true);
     try {
-      const res = await fetch("/api/generate", {
+      const res = await fetch("/api/generate-public", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: prompt.trim(), content_type: contentType }),
@@ -91,10 +73,13 @@ export default function DashboardPage() {
 
       setResult(data as GenerateResponse);
       setCopied(false);
+      
       if (!isRegenerate) {
+        const newCount = trialUsed + 1;
+        setTrialUsed(newCount);
+        localStorage.setItem("trial_generations", newCount.toString());
         toast.success("Copy generated!");
       }
-      fetchUsage();
     } catch {
       toast.error("Network error. Please try again.");
     } finally {
@@ -114,88 +99,68 @@ export default function DashboardPage() {
     }
   }
 
-  const unlimited = false; // 所有用户都有每日限制
-  const used = usage?.used_today ?? 0;
-  const limit = usage?.daily_limit ?? 5;
-  const percent = Math.min(100, (used / Math.max(limit, 1)) * 100);
+  // 如果试用次数用完了，显示注册提示
+  if (trialRemaining <= 0 && !loading) {
+    return (
+      <div className="flex min-h-screen flex-1 items-center justify-center bg-zinc-50 px-4 py-12 dark:bg-black">
+        <Card className="w-full max-w-md text-center">
+          <CardHeader>
+            <Sparkles className="mx-auto h-12 w-12 text-primary" />
+            <CardTitle className="text-2xl font-bold">Trial Complete!</CardTitle>
+            <CardDescription className="mt-2">
+              You&apos;ve used all {TRIAL_LIMIT} free trial generations.
+              Sign up to get <strong>5 free generations every day</strong>!
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="rounded-lg bg-muted/50 p-4 text-sm">
+              <p className="font-medium">What you get with a free account:</p>
+              <ul className="mt-2 space-y-1 text-left text-muted-foreground">
+                <li>• 5 AI generations per day</li>
+                <li>• All copy formats (emails, social, ads, etc.)</li>
+                <li>• Copy history and favorites</li>
+                <li>• Refer friends to earn more free generations</li>
+              </ul>
+            </div>
+            <Link href="/signup">
+              <Button size="lg" className="w-full">
+                Sign Up Free
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+            <p className="text-sm text-muted-foreground">
+              Already have an account?{" "}
+              <Link href="/login" className="text-primary hover:underline">
+                Log in
+              </Link>
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold tracking-tight">AI Copy Generator</h1>
-        <p className="text-sm text-muted-foreground">
-          Describe your product or topic and let Copywise write it for you.
+    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mb-8 text-center">
+        <Badge variant="secondary" className="mb-4">
+          <Sparkles className="mr-1 h-3 w-3" />
+          Free Trial - No Signup Required
+        </Badge>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Try Copywise AI <span className="text-primary">Free</span>
+        </h1>
+        <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
+          Generate high-quality copy in seconds. You have{" "}
+          <strong className="text-primary">{trialRemaining}</strong> free trial
+          generations left.
         </p>
       </div>
 
-      {/* Usage card */}
-      <Card>
-        <CardContent className="flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-sm font-medium">
-              <span>
-                {used} / {limit} generations used today
-              </span>
-            </p>
-            {usage && used >= limit && (
-              <p className="mt-1 text-xs text-destructive">
-                You&apos;ve reached your daily limit.
-              </p>
-            )}
-          </div>
-          <Link href="/dashboard/billing">
-            <Button size="sm" variant="outline" className="gap-1">
-              <ArrowUpCircle />
-              Upgrade to Pro
-            </Button>
-          </Link>
-        </CardContent>
-        <div className="px-6 pb-6">
-          <div className="h-2 w-full overflow-hidden rounded-full bg-secondary">
-            <div
-              className="h-full rounded-full bg-primary transition-all"
-              style={{ width: `${percent}%` }}
-            />
-          </div>
-        </div>
-      </Card>
-
-      {/* Referral card */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-lg">Refer & Earn Free Generations</CardTitle>
-          <CardDescription>
-            Share your referral link. Every friend who signs up gets you +5 free generations per day!
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="flex items-center gap-2 rounded-lg border bg-muted/40 p-3">
-            <code className="flex-1 truncate text-xs">
-              {typeof window !== "undefined" ? `${window.location.origin}/?ref=your-user-id` : ""}
-            </code>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={async () => {
-                const link = `${window.location.origin}/?ref=your-user-id`;
-                await navigator.clipboard.writeText(link);
-                toast.success("Referral link copied!");
-              }}
-            >
-              Copy
-            </Button>
-          </div>
-          <ShareButtons
-            size="sm"
-            text="Get free AI copywriting with Copywise! Sign up with my link: "
-          />
-        </CardContent>
-      </Card>
-
       {/* Generator form */}
-      <Card>
+      <Card className="mb-6">
         <CardHeader>
-          <CardTitle>Create new copy</CardTitle>
+          <CardTitle>Create your first copy</CardTitle>
           <CardDescription>
             Pick a content type and describe what you want to write.
           </CardDescription>
@@ -222,7 +187,7 @@ export default function DashboardPage() {
               id="prompt"
               rows={5}
               placeholder={
-                "e.g. Write a cold email selling our project management tool to startup CTOs who are overwhelmed by status meetings..."
+                "e.g. Write a cold email selling our project management tool to startup CTOs..."
               }
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
@@ -230,7 +195,7 @@ export default function DashboardPage() {
           </div>
           <Button
             onClick={() => handleGenerate(false)}
-            disabled={loading || (usage ? used >= limit : false)}
+            disabled={loading || trialRemaining <= 0}
             className="w-full sm:w-auto"
           >
             {loading ? (
@@ -287,13 +252,17 @@ export default function DashboardPage() {
               </Button>
             </div>
             <div className="border-t pt-4">
-              <p className="mb-2 text-xs font-medium text-muted-foreground">
-                Share this copy or recommend Copywise:
-              </p>
-              <ShareButtons
-                size="sm"
-                text={`Just generated this ${CONTENT_TYPE_LABELS[contentType].toLowerCase()} with Copywise AI! Try it free: `}
-              />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p className="text-sm font-medium">
+                  Love it? Sign up to keep generating for free every day!
+                </p>
+                <Link href="/signup">
+                  <Button size="sm">
+                    Sign Up Free
+                    <ArrowRight className="ml-1 h-3 w-3" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </CardContent>
         </Card>
