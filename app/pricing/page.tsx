@@ -123,18 +123,16 @@ export default function PricingPage() {
                   <div className="mt-4 space-y-1">
                     <div className="flex items-baseline gap-2">
                       <span className="text-4xl font-bold tracking-tight">
-                        $15
+                        $29
                       </span>
                       <span className="text-sm text-muted-foreground">
-                        per month, billed annually
+                        per month
                       </span>
                     </div>
                     <p className="text-sm text-primary">
-                      {PRO_PLAN.yearlyPriceNote}
+                      30-day free trial
                     </p>
-                    <p className="text-xs text-muted-foreground">
-                      Or $19/month billed monthly.
-                    </p>
+                    
                   </div>
                 </CardHeader>
                 <CardContent>
