@@ -89,9 +89,9 @@ export const FREE_PLAN = {
 
 export const PRO_PLAN = {
   name: "Pro",
-  price: "$19",
+  price: "$29",
   priceNote: "per month, billed monthly",
-  yearlyPriceNote: "$15/month billed annually — Save 20%",
+  yearlyPriceNote: "$29/month billed annually",
   description: "For teams and creators who need high-volume copy.",
   features: [
     "100 AI generations per day",
