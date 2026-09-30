@@ -3,7 +3,6 @@ import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-
 const POSTS = [
   {
     slug: "cold-email-guide",
@@ -29,8 +28,31 @@ const POSTS = [
     date: "Sep 20, 2026",
     readTime: "5 min read",
   },
+  {
+    slug: "cold-email-deliverability-checklist",
+    title: "Cold Email Deliverability Checklist: SPF, DKIM, DMARC That Actually Works",
+    description:
+      "Your cold emails landing in spam? Fix the three authentication records first. The complete 2026 deliverability checklist for B2B cold email.",
+    date: "Sep 30, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "cold-email-volume-limits-2026",
+    title: "Cold Email Volume Limits in 2026: Why 50 Per Day Beats 500",
+    description:
+      "Sending 500 cold emails a day from one inbox kills your deliverability. Here's the 2026 data on volume limits, inbox rotation, and why quality beats quantity.",
+    date: "Sep 30, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "multichannel-outreach-playbook",
+    title: "Multichannel Outreach: Why Email Alone Caps Your Reply Rate",
+    description:
+      "Cold email works — until it stops. Multichannel sequencing (email + LinkedIn + phone) lifts engagement 40% and reply rates 287%. Here's the 2026 playbook.",
+    date: "Sep 30, 2026",
+    readTime: "6 min read",
+  },
 ];
-
 export default function BlogPage() {
   return (
     <div className="flex min-h-screen flex-1 flex-col">
@@ -46,7 +68,6 @@ export default function BlogPage() {
               and copy that converts.
             </p>
           </div>
-
           <div className="mt-16 grid gap-6">
             {POSTS.map((post) => (
               <Card key={post.slug} className="hover:shadow-lg transition-shadow">
