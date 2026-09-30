@@ -61,7 +61,37 @@ Personalization doesn't mean "Hi John" instead of "Hi [First Name]." Real person
 
 The more specific you are, the higher your reply rate.
 
-### 3. It Leads With a Problem, Not a Pitche in practice:
+### 3. It Leads With a Problem, Not a Pitch
+
+Nobody cares about your product. They care about their problems.
+
+Bad opening: "We help SaaS companies reduce churn by 30%."
+
+Good opening: "I noticed you're onboarding 100+ new customers a week — how's your churn looking?"
+
+See the difference? The bad opening is all about you. The good opening is all about their problem.
+
+### 4. It Has a Clear, Low-Effort Call to Action
+
+Your CTA shouldn't be "book a demo." That's too big of a ask.
+
+Start smaller:
+- "Would you be open to a 15-minute chat?"
+- "Is this something you'd be interested in learning more about?"
+- "Should I send over a quick one-pager?"
+
+The easier you make it to say "yes," the more yeses you'll get.
+
+## The Cold Email Formula That Actually Works
+
+Here's the exact formula I've been using that gets 15-25% reply rates:
+
+**Line 1: The Hook** — Reference something specific about them
+**Line 2: The Problem** — State the problem they're likely facing
+**Line 3: The Solution** — Briefly explain how you solve it
+**Line 4: The CTA** — Ask for something small
+
+Here's what that looks like in practice:
 
 > Hi Sarah,
 > 
@@ -142,7 +172,35 @@ After testing hundreds of subject lines, here are the 10 that consistently get t
 
 ## Why Subject Lines Matter
 
-64% of people say they open an email because of the subject line. That means your subject l you a message, not a sales email.
+64% of people say they open an email because of the subject line. That means your subject line is doing 80% of the work.
+
+A great subject line gets opened. A bad one gets deleted — or worse, marked as spam.
+
+## The 10 Best Cold Email Subject Lines
+
+### 1. "Quick question about [specific topic]"
+
+Example: "Quick question about your onboarding flow"
+
+Why it works: It's specific, it's humble, and it implies you have a real question (not a sales pitch).
+
+### 2. "Saw your post about [topic]"
+
+Example: "Saw your post about AI in sales"
+
+Why it works: It shows you've done your research. It's personal. It implies you're not spamming everyone.
+
+### 3. "Ideas for [specific problem]"
+
+Example: "Ideas for reducing customer churn"
+
+Why it works: It's solution-oriented. It promises value, not a pitch.
+
+### 4. "[First Name] — quick thought"
+
+Example: "Sarah — quick thought"
+
+Why it works: It's casual. It feels like a friend sending you a message, not a sales email.
 
 ### 5. "Following up on [specific thing]"
 
@@ -232,7 +290,35 @@ Let's break down the pros, cons, and best use cases for each.
 
 ### Pros
 
-- **Scalable**: You can reach hundreds of new prospects every dayail if:**
+- **Scalable**: You can reach hundreds of new prospects every day
+- **Low cost**: No need to attend conferences or build a huge network
+- **Targeted**: You can email exactly the people you want to talk to
+
+### Cons
+
+- **Lower reply rate**: Usually 1-5%
+- **Time-consuming**: Writing personalized cold emails takes time
+- **Deliverability risk**: Too many cold emails can get you flagged as spam
+
+## Warm Email: Pros and Cons
+
+### Pros
+
+- **Higher reply rate**: Usually 10-25%
+- **Better trust**: You already have some connection
+- **Shorter sales cycle**: People already know who you are
+
+### Cons
+
+- **Not scalable**: You can only warm up so many relationships
+- **Takes time**: Building warm relationships takes months or years
+- **Limited audience**: You can only reach people you already know
+
+## Which One Should You Use?
+
+It depends on your goals:
+
+**Use cold email if:**
 - You're just starting out and don't have a network
 - You need to reach a lot of new prospects fast
 - You have a clear target audience
@@ -297,7 +383,35 @@ Cryptographically signs your emails so they can't be forged.
 
 - Generate a keypair in your sending platform (Google Workspace, Outlook, etc.)
 - Publish the public key as a TXT record: \`v=DKIM1; k=rsa; p=...\`
-- The selector matters — it must match your sending service exactlyshboard (open rate vs. spam rate)
+- The selector matters — it must match your sending service exactly
+
+### 3. DMARC (Domain-based Message Authentication)
+Tells receivers what to do with mail that fails SPF/DKIM.
+
+- Start with monitoring: \`v=DMARC1; p=none; rua=mailto:you@yourdomain.com\`
+- Once clean, move to quarantine: \`p=quarantine\`
+- Check alignment — SPF and DKIM domains must match your From domain
+
+## The 2026 Delivery Checklist
+
+**Before sending anything:**
+
+- [ ] SPF, DKIM, DMARC all verified via MXToolbox or dmarcian
+- [ ] Sending domain warmed up 4–6 weeks (3–5 emails/day, ramping)
+- [ ] Sender volume capped at 30–50 emails per inbox per day
+- [ ] Bounce rate under 2% — bounce rates above 5% tank sender reputation
+- [ ] Every contact verified before sending (never buy scraped lists)
+
+**In every email:**
+
+- [ ] Plain-text, human tone — no spam-trigger words ("free", "guarantee", "act now")
+- [ ] Real sender name and clear signature
+- [ ] One link max, from your primary domain
+- [ ] Unsubscribe or "no worries if not" line — respect and deliverability win together
+
+**Weekly:**
+
+- [ ] Check deliverability dashboard (open rate vs. spam rate)
 - [ ] Rotate volume across inboxes if scaling
 - [ ] Remove hard bounces immediately
 
@@ -351,7 +465,35 @@ Volume is not the lever. The 2026 data is clear:
 
 ## The Bottom Line
 
-Stop asking "how many emails can I send" and start asking "which 50 prospects deserve my be | Purpose |
+Stop asking "how many emails can I send" and start asking "which 50 prospects deserve my best message today." The research IS the deliverable — the email is just the delivery mechanism.
+
+---
+
+*Want to generate personalized cold emails that actually get replies? ColdCrow drafts high-deliverability outreach in seconds. Free tier available — no credit card required.*
+`,
+  },
+  "multichannel-outreach-playbook": {
+    title: "Multichannel Outreach: Why Email Alone Caps Your Reply Rate",
+    date: "Sep 30, 2026",
+    readTime: "6 min read",
+    content: `
+# Multichannel Outreach: Why Email Alone Caps Your Reply Rate
+
+Cold email is still the workhorse of B2B outbound. But in 2026, running email-only outreach is like fishing with one line in one pond.
+
+## The Numbers That Changed the Game
+
+Recent B2B outreach benchmarks are dramatic:
+
+- **Omnichannel campaigns yield 40% higher engagement** and 31% lower cost-per-lead than single-channel
+- **Using three or more touchpoints** drives response rates up **287%** versus relying on one
+- For enterprise, C-suite, and European markets, LinkedIn is sometimes **more effective than email**
+
+## The 2026 Multichannel Sequence
+
+The most effective sequences blend channels with specific purposes:
+
+| Day | Channel | Purpose |
 |-----|---------|---------|
 | Day 1 | Email | Trigger + insight (personalized observation) |
 | Day 3 | LinkedIn | Connection request with shared context |
@@ -398,7 +540,35 @@ Data across B2B outreach consistently shows:
 - **80% of sales happen after follow-up #2**
 - **44% of senders give up after the first email** — leaving replies on the table
 - A single follow-up can lift reply rate by **25-30%**
- pestering gets you blocked
+
+## The 5-Step Sequence That Works
+
+| Email | Day | Goal | Format |
+|-------|-----|------|--------|
+| #1 | Day 0 | Trigger + insight | 3-4 sentences, one observation |
+| #2 | Day 3 | Add value, no ask | Share an insight or resource |
+| #3 | Day 7 | Soft check-in | "Still on your radar?" |
+| #4 | Day 14 | New angle | Different pain point, new proof |
+| #5 | Day 21 | Break-up | "Closing the loop — happy to connect anytime" |
+
+### Email #1: The Trigger (Day 0)
+Open with something specific about their company, product, or content. Never "I hope this finds you well."
+
+### Email #2: The Value Add (Day 3)
+Don't pitch again. Send something genuinely useful — a benchmark, a case study, a relevant observation. This is the email that separates pros from spammers.
+
+### Email #3: The Soft Check (Day 7)
+One or two lines. "Circling back — is email still the best way to reach you?" Low pressure, high politeness.
+
+### Email #4: The New Angle (Day 14)
+You have permission to pitch differently now. New problem angle, new proof point, new example. Same product, different story.
+
+### Email #5: The Break-Up (Day 21)
+"Closing the loop on this one. If it's not a fit right now, no worries — happy to connect down the road." This email gets replies from people who were interested but forgot to say yes.
+
+## Rules That Keep You Out of Spam
+
+- Space follow-ups 3-7 days apart — daily pestering gets you blocked
 - Never send more than 5 emails per prospect per cycle
 - Every email must feel hand-written, never like part of a sequence
 - Always honor "not interested" — remove them immediately
@@ -460,7 +630,35 @@ Rules:
 \`\`\`
 
 That's it. The specificity lives in the context line — if it's empty, the email will be generic.
-it at 4 sentences, edit for 30 seconds, and you'll send emails that sound like you, at a volume that used to take a team.
+
+## Why 4 Sentences Beats 400 Words
+
+AI tends to over-explain. Long emails have two problems:
+
+- **They read as AI.** Humans sending cold emails to strangers keep it short.
+- **They lower reply rate.** Every sentence past the fourth is an argument against replying.
+
+A 4-sentence email forces the AI to make choices: which detail matters, what the real ask is.
+
+## The Human Edit Pass
+
+Never send an AI draft untouched. A 30-second edit catches:
+
+- The over-perfect phrasing AI loves ("I noticed that your company appears to be scaling...")
+- The redundant second paragraph
+- A CTA that's too big ("Let's schedule a demo" → "Open to a 10-minute chat?")
+
+The best workflow: AI drafts, human trims, then send.
+
+## Where AI Wins and Loses
+
+**AI wins:** speed, volume, consistency, follow-up variation. You can generate 50 personalized first emails in 20 minutes.
+
+**AI loses:** judgment about which prospects matter, reading between the lines of a company's real situation, knowing when *not* to email.
+
+## The Bottom Line
+
+AI didn't make cold email impersonal — it made personalization scalable. Feed it real context, cap it at 4 sentences, edit for 30 seconds, and you'll send emails that sound like you, at a volume that used to take a team.
 
 ---
 
@@ -530,21 +728,7 @@ export default async function BlogPostPage({
               }
               if (paragraph.startsWith("- ")) {
                 const items = paragraph.split("\n").filter((line) => line.startsWith("- "));
-                return (               );
-                    }
-                    return part;
-                  })}
-                </p>
-              );
-            })}
-          </div>
-        </article>
-      </main>
-      <Footer />
-    </div>
-  );
-}
-
+                return (
                   <ul key={i} className="my-4 ml-6 list-disc space-y-2">
                     {items.map((item, j) => (
                       <li key={j}>{item.slice(2)}</li>
@@ -572,202 +756,17 @@ export default async function BlogPostPage({
                         <strong key={j} className="font-semibold">
                           {part.slice(2, -2)}
                         </strong>
-       
-## Why 4 Sentences Beats 400 Words
-
-AI tends to over-explain. Long emails have two problems:
-
-- **They read as AI.** Humans sending cold emails to strangers keep it short.
-- **They lower reply rate.** Every sentence past the fourth is an argument against replying.
-
-A 4-sentence email forces the AI to make choices: which detail matters, what the real ask is.
-
-## The Human Edit Pass
-
-Never send an AI draft untouched. A 30-second edit catches:
-
-- The over-perfect phrasing AI loves ("I noticed that your company appears to be scaling...")
-- The redundant second paragraph
-- A CTA that's too big ("Let's schedule a demo" → "Open to a 10-minute chat?")
-
-The best workflow: AI drafts, human trims, then send.
-
-## Where AI Wins and Loses
-
-**AI wins:** speed, volume, consistency, follow-up variation. You can generate 50 personalized first emails in 20 minutes.
-
-**AI loses:** judgment about which prospects matter, reading between the lines of a company's real situation, knowing when *not* to email.
-
-## The Bottom Line
-
-AI didn't make cold email impersonal — it made personalization scalable. Feed it real context, cap 
-## The 5-Step Sequence That Works
-
-| Email | Day | Goal | Format |
-|-------|-----|------|--------|
-| #1 | Day 0 | Trigger + insight | 3-4 sentences, one observation |
-| #2 | Day 3 | Add value, no ask | Share an insight or resource |
-| #3 | Day 7 | Soft check-in | "Still on your radar?" |
-| #4 | Day 14 | New angle | Different pain point, new proof |
-| #5 | Day 21 | Break-up | "Closing the loop — happy to connect anytime" |
-
-### Email #1: The Trigger (Day 0)
-Open with something specific about their company, product, or content. Never "I hope this finds you well."
-
-### Email #2: The Value Add (Day 3)
-Don't pitch again. Send something genuinely useful — a benchmark, a case study, a relevant observation. This is the email that separates pros from spammers.
-
-### Email #3: The Soft Check (Day 7)
-One or two lines. "Circling back — is email still the best way to reach you?" Low pressure, high politeness.
-
-### Email #4: The New Angle (Day 14)
-You have permission to pitch differently now. New problem angle, new proof point, new example. Same product, different story.
-
-### Email #5: The Break-Up (Day 21)
-"Closing the loop on this one. If it's not a fit right now, no worries — happy to connect down the road." This email gets replies from people who were interested but forgot to say yes.
-
-## Rules That Keep You Out of Spam
-
-- Space follow-ups 3-7 days apart — dailyst message today." The research IS the deliverable — the email is just the delivery mechanism.
-
----
-
-*Want to generate personalized cold emails that actually get replies? ColdCrow drafts high-deliverability outreach in seconds. Free tier available — no credit card required.*
-`,
-  },
-  "multichannel-outreach-playbook": {
-    title: "Multichannel Outreach: Why Email Alone Caps Your Reply Rate",
-    date: "Sep 30, 2026",
-    readTime: "6 min read",
-    content: `
-# Multichannel Outreach: Why Email Alone Caps Your Reply Rate
-
-Cold email is still the workhorse of B2B outbound. But in 2026, running email-only outreach is like fishing with one line in one pond.
-
-## The Numbers That Changed the Game
-
-Recent B2B outreach benchmarks are dramatic:
-
-- **Omnichannel campaigns yield 40% higher engagement** and 31% lower cost-per-lead than single-channel
-- **Using three or more touchpoints** drives response rates up **287%** versus relying on one
-- For enterprise, C-suite, and European markets, LinkedIn is sometimes **more effective than email**
-
-## The 2026 Multichannel Sequence
-
-The most effective sequences blend channels with specific purposes:
-
-| Day | Channel
-
-### 3. DMARC (Domain-based Message Authentication)
-Tells receivers what to do with mail that fails SPF/DKIM.
-
-- Start with monitoring: \`v=DMARC1; p=none; rua=mailto:you@yourdomain.com\`
-- Once clean, move to quarantine: \`p=quarantine\`
-- Check alignment — SPF and DKIM domains must match your From domain
-
-## The 2026 Delivery Checklist
-
-**Before sending anything:**
-
-- [ ] SPF, DKIM, DMARC all verified via MXToolbox or dmarcian
-- [ ] Sending domain warmed up 4–6 weeks (3–5 emails/day, ramping)
-- [ ] Sender volume capped at 30–50 emails per inbox per day
-- [ ] Bounce rate under 2% — bounce rates above 5% tank sender reputation
-- [ ] Every contact verified before sending (never buy scraped lists)
-
-**In every email:**
-
-- [ ] Plain-text, human tone — no spam-trigger words ("free", "guarantee", "act now")
-- [ ] Real sender name and clear signature
-- [ ] One link max, from your primary domain
-- [ ] Unsubscribe or "no worries if not" line — respect and deliverability win together
-
-**Weekly:**
-
-- [ ] Check deliverability da
-- **Low cost**: No need to attend conferences or build a huge network
-- **Targeted**: You can email exactly the people you want to talk to
-
-### Cons
-
-- **Lower reply rate**: Usually 1-5%
-- **Time-consuming**: Writing personalized cold emails takes time
-- **Deliverability risk**: Too many cold emails can get you flagged as spam
-
-## Warm Email: Pros and Cons
-
-### Pros
-
-- **Higher reply rate**: Usually 10-25%
-- **Better trust**: You already have some connection
-- **Shorter sales cycle**: People already know who you are
-
-### Cons
-
-- **Not scalable**: You can only warm up so many relationships
-- **Takes time**: Building warm relationships takes months or years
-- **Limited audience**: You can only reach people you already know
-
-## Which One Should You Use?
-
-It depends on your goals:
-
-**Use cold emine is doing 80% of the work.
-
-A great subject line gets opened. A bad one gets deleted — or worse, marked as spam.
-
-## The 10 Best Cold Email Subject Lines
-
-### 1. "Quick question about [specific topic]"
-
-Example: "Quick question about your onboarding flow"
-
-Why it works: It's specific, it's humble, and it implies you have a real question (not a sales pitch).
-
-### 2. "Saw your post about [topic]"
-
-Example: "Saw your post about AI in sales"
-
-Why it works: It shows you've done your research. It's personal. It implies you're not spamming everyone.
-
-### 3. "Ideas for [specific problem]"
-
-Example: "Ideas for reducing customer churn"
-
-Why it works: It's solution-oriented. It promises value, not a pitch.
-
-### 4. "[First Name] — quick thought"
-
-Example: "Sarah — quick thought"
-
-Why it works: It's casual. It feels like a friend sending
-
-Nobody cares about your product. They care about their problems.
-
-Bad opening: "We help SaaS companies reduce churn by 30%."
-
-Good opening: "I noticed you're onboarding 100+ new customers a week — how's your churn looking?"
-
-See the difference? The bad opening is all about you. The good opening is all about their problem.
-
-### 4. It Has a Clear, Low-Effort Call to Action
-
-Your CTA shouldn't be "book a demo." That's too big of a ask.
-
-Start smaller:
-- "Would you be open to a 15-minute chat?"
-- "Is this something you'd be interested in learning more about?"
-- "Should I send over a quick one-pager?"
-
-The easier you make it to say "yes," the more yeses you'll get.
-
-## The Cold Email Formula That Actually Works
-
-Here's the exact formula I've been using that gets 15-25% reply rates:
-
-**Line 1: The Hook** — Reference something specific about them
-**Line 2: The Problem** — State the problem they're likely facing
-**Line 3: The Solution** — Briefly explain how you solve it
-**Line 4: The CTA** — Ask for something small
-
-Here's what that looks lik
+                      );
+                    }
+                    return part;
+                  })}
+                </p>
+              );
+            })}
+          </div>
+        </article>
+      </main>
+      <Footer />
+    </div>
+  );
+}
