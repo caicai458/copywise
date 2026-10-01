@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://getcopywise.com";
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://copywise.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Copywise — AI Copywriting Tool for Modern Businesses",
-    template: "%s | Copywise",
+    default: "ColdCrow — AI Cold Email Writer for B2B Founders",
+    template: "%s | ColdCrow",
   },
   description:
     "Generate high-converting cold emails, social posts, ad copy, and more with AI. Start free, upgrade when you need unlimited generations.",
@@ -33,20 +33,20 @@ export const metadata: Metadata = {
     "SaaS copywriting",
     "AI content generator",
   ],
-  authors: [{ name: "Copywise" }],
-  creator: "Copywise",
+  authors: [{ name: "ColdCrow" }],
+  creator: "ColdCrow",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Copywise — AI Copywriting Tool for Modern Businesses",
+    title: "ColdCrow — AI Cold Email Writer for B2B Founders",
     description:
       "Generate high-converting cold emails, social posts, ad copy, and more with AI.",
-    siteName: "Copywise",
+    siteName: "ColdCrow",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Copywise — AI Copywriting Tool",
+    title: "ColdCrow — AI Cold Email Writer",
     description:
       "Generate high-converting copy with AI. Cold emails, social posts, ad copy & more.",
   },
