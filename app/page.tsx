@@ -53,7 +53,7 @@ const HOW_IT_WORKS = [
     icon: Type,
     title: "Describe your product",
     description:
-      "Tell Copywise what you sell, who it's for, and what makes it unique.",
+      "Tell ColdCrow what you sell, who it's for, and what makes it unique.",
   },
   {
     step: "02",
@@ -78,9 +78,9 @@ const FAQS: FaqItem[] = [
       "Free accounts receive 5 AI generations per day. The limit resets every 24 hours based on your account's activity. Unused generations do not roll over to the next day. Upgrading to Pro removes the daily cap entirely.",
   },
   {
-    question: "What types of copy can Copywise generate?",
+    question: "What types of copy can ColdCrow generate?",
     answer:
-      "Copywise supports cold emails, social media posts, ad copy, product descriptions, and blog introductions. More formats are added regularly. Pro users unlock all available formats.",
+      "ColdCrow supports cold emails, social media posts, ad copy, product descriptions, and blog introductions. More formats are added regularly. Pro users unlock all available formats.",
   },
   {
     question: "Is my data safe and GDPR-compliant?",
@@ -95,7 +95,7 @@ const FAQS: FaqItem[] = [
   {
     question: "Should I review AI-generated content before publishing?",
     answer:
-      "Yes. AI copy is a starting point, not a final draft. Always review factual claims, tone, and brand voice before sending emails, running ads, or publishing publicly. Copywise is not liable for content you choose to publish.",
+      "Yes. AI copy is a starting point, not a final draft. Always review factual claims, tone, and brand voice before sending emails, running ads, or publishing publicly. ColdCrow is not liable for content you choose to publish.",
   },
   {
     question: "What payment methods do you accept?",
@@ -166,19 +166,19 @@ export default function Home() {
                   <p className="mt-2 text-sm leading-relaxed text-foreground">
                     Noticed your team just shipped v2 of your analytics product.
                     Most sales teams I work with lose 40% of their pipeline to
-                    follow-ups that never get written. Copywise drafts those
+                    follow-ups that never get written. ColdCrow drafts those
                     emails in seconds — no writer's block, no generic templates.
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-foreground">
                     Worth a 5-minute look?
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-foreground">
-                    — The Copywise team
+                    — The ColdCrow team
                   </p>
                   <Separator className="my-4" />
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <Sparkles className="h-3 w-3 text-primary" />
-                    Generated with Copywise AI · Ready to send
+                    Generated with ColdCrow AI · Ready to send
                   </div>
                 </CardContent>
               </Card>
@@ -294,7 +294,7 @@ export default function Home() {
                 Frequently asked questions
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Everything you need to know about Copywise.
+                Everything you need to know about ColdCrow.
               </p>
             </div>
             <div className="mt-12">
@@ -312,7 +312,7 @@ export default function Home() {
                   Start Writing Better Copy Today
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-                  Join thousands of sales reps and creators who use Copywise to
+                  Join thousands of sales reps and creators who use ColdCrow to
                   turn product ideas into copy that converts.
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -334,7 +334,7 @@ export default function Home() {
                 <div className="mt-8 flex justify-center">
                   <ShareButtons
                     size="sm"
-                    text="Just found Copywise - AI copywriting tool that writes cold emails, social posts, and ad copy in seconds. Free to try!"
+                    text="Just found ColdCrow - AI copywriting tool that writes cold emails, social posts, and ad copy in seconds. Free to try!"
                   />
                 </div>
               </CardContent>
