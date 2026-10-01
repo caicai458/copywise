@@ -52,6 +52,22 @@ const POSTS = [
     date: "Sep 30, 2026",
     readTime: "6 min read",
   },
+  {
+    slug: "cold-email-follow-up",
+    title: "The 3-Touch Follow-Up Framework That Actually Gets Replies",
+    description:
+      "80% of cold email replies come after the first email. Here's the 3-touch follow-up framework that actually gets replies.",
+    date: "Oct 1, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "cold-email-deliverability",
+    title: "Cold Email Deliverability: SPF, DKIM & DMARC for Founders",
+    description:
+      "Your cold emails landing in spam? The 2026 deliverability setup for founders: SPF, DKIM and DMARC explained simply.",
+    date: "Oct 1, 2026",
+    readTime: "7 min read",
+  },
 ];
 export default function BlogPage() {
   return (
