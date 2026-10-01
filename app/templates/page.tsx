@@ -1,10 +1,6 @@
-import Link from "next/link";
+"use client";
 
-export const metadata = {
-  title: "Cold Email Templates",
-  description:
-    "Free cold email, LinkedIn, and WhatsApp templates for B2B outreach. Copy, personalize, and send with ColdCrow.",
-};
+import Link from "next/link";
 
 const categories = [
   {
