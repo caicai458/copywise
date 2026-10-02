@@ -49,7 +49,7 @@ export function LoginForm() {
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
         <CardDescription>
-          Sign in to your Copywise account to continue generating copy.
+          Sign in to your ColdCrow account to continue generating copy.
         </CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
