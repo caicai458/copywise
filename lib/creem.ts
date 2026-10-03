@@ -59,7 +59,7 @@ export async function createCheckout(
   return creemFetch<CreemCheckout>("/checkout", {
     method: "POST",
     body: JSON.stringify({
-      price: input.price_id,
+      productId: input.price_id,
       customer_email: input.customer_email,
       customer_name: input.customer_name,
       success_url: input.success_url,
