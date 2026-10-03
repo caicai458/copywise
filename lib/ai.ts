@@ -61,7 +61,7 @@ export async function generateCopy(
     );
   }
 
-  const rawText = await response.text(); console.log('Zhipu raw resp:', rawText.substring(0, 500)); const data = JSON.parse(rawText);
+  const rawText = await response.text(); let data; try { data = JSON.parse(rawText); } catch (pe) { throw new Error("AI response not JSON: " + rawText.substring(0, 300)); }
   console.log("Zhipu API response:", JSON.stringify(data).substring(0, 500));
   const content = data.choices?.[0]?.message?.content || "";
   const tokensUsed = data.usage?.total_tokens || 0;
