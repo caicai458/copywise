@@ -31,7 +31,7 @@ export function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
                 <Sparkles className="h-4 w-4" />
               </span>
-              <span>Copywise</span>
+              <span>ColdCrow</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               AI-powered copywriting for modern businesses. Write emails, social
@@ -90,7 +90,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-sm text-muted-foreground">
-            &copy; 2026 Copywise. All rights reserved.
+            &copy; 2026 ColdCrow. All rights reserved.
           </p>
         </div>
       </div>
