@@ -2,8 +2,8 @@ import type { ContentType } from "./types";
 
 const ZHIPU_API_KEY = process.env.ZHIPU_API_KEY;
 const ZHIPU_BASE_URL =
-  process.env.ZHIPU_BASE_URL || "https://open.bigmodel.cn/api/paas/v4";
-const ZHIPU_MODEL = process.env.ZHIPU_MODEL || "glm-5.3-flash";
+  "https://api.z.ai/api/paas/v4";
+const ZHIPU_MODEL = "glm-4.7-flash";
 
 export interface GenerateResult {
   content: string;
