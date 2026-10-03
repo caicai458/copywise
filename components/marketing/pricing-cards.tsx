@@ -101,7 +101,7 @@ export const PRO_PLAN = {
     "GDPR-compliant data handling",
   ],
   cta: "Upgrade to Pro",
-  ctaHref: "/signup",
+  ctaHref: "/signup?plan=pro",
 };
 
 export function PricingCards() {
