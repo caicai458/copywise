@@ -5,6 +5,46 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-deliverability-checklist-2026",
+    title: "Cold Email Deliverability in 2026: The Practical Checklist",
+    description:
+      "Cold email only works when it lands in the inbox. This checklist covers SPF/DKIM/DMARC, warmup, sending limits, content signals, and the metrics that matter.",
+    date: "Oct 3, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-follow-up-sequence-2026",
+    title: "Cold Email Follow-Up: The Sequence That Doubles Your Replies",
+    description:
+      "Most cold outreach dies in the first email. Here is the 4-email follow-up sequence that gets 3-4x more replies.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "why-cold-emails-go-to-spam-2026",
+    title: "Why Your Cold Emails Go to Spam (And How to Fix It)",
+    description:
+      "Your cold emails land in spam for three reasons: untrusted sending setup, content that trips filters, and a list full of dead addresses. Here is the fix.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "5-cold-email-openers-2026",
+    title: "5 Cold Email Openers That Actually Get Replies",
+    description:
+      "Your first line decides whether your cold email gets read or deleted in two seconds. Five opener patterns that work in 2026, with real examples.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "saas-cold-email-playbook-2026",
+    title: "Cold Email for SaaS: The Playbook That Gets 5-10% Reply Rates",
+    description:
+      "Most SaaS founders treat cold email like a lottery. The ones who get real reply rates treat every email like a product launch for one person.",
+    date: "Oct 3, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "cold-email-guide",
     title: "The Ultimate Guide to Cold Emails That Actually Get Replies (2026)",
     description:
@@ -27,46 +67,6 @@ const POSTS = [
       "Cold email vs warm email — which one should you be using? Let's break down the pros, cons, and best use cases.",
     date: "Sep 20, 2026",
     readTime: "5 min read",
-  },
-  {
-    slug: "cold-email-deliverability-checklist",
-    title: "Cold Email Deliverability Checklist: SPF, DKIM, DMARC That Actually Works",
-    description:
-      "Your cold emails landing in spam? Fix the three authentication records first. The complete 2026 deliverability checklist for B2B cold email.",
-    date: "Sep 30, 2026",
-    readTime: "7 min read",
-  },
-  {
-    slug: "cold-email-volume-limits-2026",
-    title: "Cold Email Volume Limits in 2026: Why 50 Per Day Beats 500",
-    description:
-      "Sending 500 cold emails a day from one inbox kills your deliverability. Here's the 2026 data on volume limits, inbox rotation, and why quality beats quantity.",
-    date: "Sep 30, 2026",
-    readTime: "6 min read",
-  },
-  {
-    slug: "multichannel-outreach-playbook",
-    title: "Multichannel Outreach: Why Email Alone Caps Your Reply Rate",
-    description:
-      "Cold email works — until it stops. Multichannel sequencing (email + LinkedIn + phone) lifts engagement 40% and reply rates 287%. Here's the 2026 playbook.",
-    date: "Sep 30, 2026",
-    readTime: "6 min read",
-  },
-  {
-    slug: "cold-email-follow-up",
-    title: "The 3-Touch Follow-Up Framework That Actually Gets Replies",
-    description:
-      "80% of cold email replies come after the first email. Here's the 3-touch follow-up framework that actually gets replies.",
-    date: "Oct 1, 2026",
-    readTime: "7 min read",
-  },
-  {
-    slug: "cold-email-deliverability",
-    title: "Cold Email Deliverability: SPF, DKIM & DMARC for Founders",
-    description:
-      "Your cold emails landing in spam? The 2026 deliverability setup for founders: SPF, DKIM and DMARC explained simply.",
-    date: "Oct 1, 2026",
-    readTime: "7 min read",
   },
 ];
 export default function BlogPage() {
