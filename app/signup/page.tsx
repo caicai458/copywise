@@ -71,7 +71,7 @@ function SignupForm() {
       setLoading(false);
     } else {
       toast.success("Account created. Welcome to Copywise!");
-      router.push("/dashboard");
+      router.push(searchParams.get("plan") === "pro" ? "/dashboard/billing" : "/dashboard");
     }
   }
 
