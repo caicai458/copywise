@@ -309,7 +309,7 @@ export default function Home() {
             <Card className="bg-primary text-primary-foreground">
               <CardContent className="px-6 py-16 text-center sm:px-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                  Start Writing cold emails that get replies Today
+                  Start Writing Cold Emails That Get Replies
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
                   Join thousands of sales reps and creators who use ColdCrow to
