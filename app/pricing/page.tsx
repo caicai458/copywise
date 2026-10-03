@@ -12,6 +12,7 @@ import {
 import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
 import { FREE_PLAN, PRO_PLAN } from "@/components/marketing/pricing-cards";
+import PayCN from "./PayCN";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -149,6 +150,11 @@ export default function PricingPage() {
                   </Button>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* CN RMB payment */}
+            <div className="mx-auto max-w-md">
+              <PayCN />
             </div>
 
             {/* Comparison table */}
