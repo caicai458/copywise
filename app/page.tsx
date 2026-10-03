@@ -119,7 +119,7 @@ export default function Home() {
                 AI Copywriting for Modern Businesses
               </Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                AI Copy That <span className="text-primary">Converts</span>
+                Cold Emails That <span className="text-primary">Get Replies</span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
                 Turn a one-line product description into polished cold emails,
@@ -190,14 +190,14 @@ export default function Home() {
         <section className="border-y border-border bg-muted/40">
           <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
             <p className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground">
-              Trusted by teams at fast-growing startups
+              What you get with ColdCrow
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-lg font-semibold text-muted-foreground/70">
-              <span>Northwind</span>
-              <span>Acme Corp</span>
-              <span>Globex</span>
-              <span>Initech</span>
-              <span>Umbrella</span>
+              <span>30-second emails</span>
+              <span>Deliverability score</span>
+              <span>Free to try</span>
+              <span>No generic templates</span>
+              <span>Built for B2B</span>
             </div>
           </div>
         </section>
