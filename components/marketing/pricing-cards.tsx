@@ -84,7 +84,7 @@ export const FREE_PLAN = {
     "Community support",
   ],
   cta: "Start for Free",
-  ctaHref: "/signup",
+  ctaHref: "/signup?plan=pro",
 };
 
 export const PRO_PLAN = {
