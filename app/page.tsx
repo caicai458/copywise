@@ -207,7 +207,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Everything you need to write better copy
+                Everything you need to write cold emails that get replies
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 A focused toolkit that removes the blank page — so you can spend
@@ -309,7 +309,7 @@ export default function Home() {
             <Card className="bg-primary text-primary-foreground">
               <CardContent className="px-6 py-16 text-center sm:px-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                  Start Writing Better Copy Today
+                  Start Writing cold emails that get replies Today
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
                   Join thousands of sales reps and creators who use ColdCrow to
