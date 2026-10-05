@@ -102,6 +102,11 @@ const FAQS: FaqItem[] = [
     answer:
       "Pro subscriptions are billed through our payment partner, Creem. We accept all major credit and debit cards, as well as popular digital wallets. Payments are processed securely — we never store your full card details on our servers.",
   },
+  {
+    question: "How is this different from just using ChatGPT?",
+    answer:
+      "ChatGPT is a general-purpose model — you write the prompt, judge the output, and still need to know what makes an email deliverable. ColdCrow is purpose-built for cold email: scenario templates, a deliverability score on every draft, spam-trigger detection, and follow-up sequences. Describe a prospect and get a send-ready email in about 30 seconds — no prompt engineering required.",
+  },
 ];
 
 export default function Home() {
