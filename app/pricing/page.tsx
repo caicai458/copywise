@@ -196,6 +196,72 @@ export default function PricingPage() {
               </div>
             </div>
 
+            {/* Competitor comparison */}
+            <div className="mx-auto mt-20 max-w-5xl">
+              <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl">
+                Built for cold email, not bolted on
+              </h2>
+              <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
+                Most tools started as senders and added AI later. ColdCrow started
+                with AI writing and deliverability scoring — then added sending,
+                follow-ups, and team features on top.
+              </p>
+              <div className="mt-8 overflow-x-auto rounded-xl border border-border bg-card">
+                <table className="w-full min-w-[640px] text-left">
+                  <thead>
+                    <tr className="border-b border-border bg-muted/50">
+                      <th className="px-6 py-4 text-sm font-semibold">Feature</th>
+                      <th className="px-6 py-4 text-center text-sm font-semibold text-primary">ColdCrow</th>
+                      <th className="px-6 py-4 text-center text-sm font-semibold">Instantly</th>
+                      <th className="px-6 py-4 text-center text-sm font-semibold">Apollo</th>
+                      <th className="px-6 py-4 text-center text-sm font-semibold">QuickMail</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    <tr>
+                      <td className="px-6 py-4 text-sm font-medium">Purpose-built AI cold email writer</td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">Partial</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">Partial</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">Partial</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm font-medium">Deliverability score on every draft</td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">Limited</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">—</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">—</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm font-medium">Follow-up sequences</td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                      <td className="px-6 py-4 text-center"><Check className="mx-auto h-4 w-4 text-primary" /></td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm font-medium">Free trial</td>
+                      <td className="px-6 py-4 text-center text-sm font-medium text-primary">30 days</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">—</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">7 days</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">14 days</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 text-sm font-medium">Starting price / month</td>
+                      <td className="px-6 py-4 text-center text-sm font-medium text-primary">$29</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">$25*</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">$49</td>
+                      <td className="px-6 py-4 text-center text-sm text-muted-foreground">$49</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p className="border-t border-border px-6 py-3 text-xs text-muted-foreground">
+                  * Instantly's $25 plan is sender-only; AI writing features start at a higher tier.
+                  Pricing as of 2026. Feature coverage summarized from each vendor's public plans.
+                </p>
+              </div>
+            </div>
+
             {/* FAQ-ish bottom note */}
             <div className="mx-auto mt-16 max-w-2xl text-center">
               <h2 className="text-2xl font-bold tracking-tight">
