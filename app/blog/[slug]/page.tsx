@@ -9,6 +9,130 @@ const POSTS: Record<
   string,
   { title: string; date: string; readTime: string; content: string }
 > = {
+    "how-to-find-right-person-to-email": {
+      title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
+      date: "Oct 7, 2026",
+      readTime: "6 min read",
+      content: `
+# How to Find the Right Person to Email: ICP Targeting for Cold Outreach
+
+You can write the perfect cold email and still get zero replies. The reason is almost never the copy — it's the target.
+
+Most senders skip the most important step: deciding who deserves the email at all. Here's a practical framework for ICP (Ideal Customer Profile) targeting that actually improves reply rates.
+
+## The 3-Question Screen
+
+Before you add anyone to your list, run them through three questions:
+
+**1. Does this person feel the pain your product solves?**
+
+Not "could they theoretically benefit" — do they feel it this quarter? A founder with a hiring problem won't open an email about payroll software... until the week their only engineer quits.
+
+**2. Can they say yes?**
+
+The right person is the one who can act on a yes. A marketing coordinator can love your tool and still need three approvals. The CMO can say yes in one meeting. Title matters less than decision authority.
+
+**3. Is this a company you actually want as a customer?**
+
+This filters for the bottom half of your funnel: deal size, implementation effort, churn risk. A $29/month user who needs 4 hours of onboarding is a loss disguised as a win.
+
+## How to Find Their Emails
+
+Once you know who to target, finding the address is usually a 3-minute task:
+
+- **Check the company's website first.** Many SaaS companies publish team pages or use a predictable pattern (first@company.com).
+- **Search the person's public work.** If they've written blog posts or spoken at events, their email is often in the byline or profile.
+- **Use LinkedIn for confirmation, not discovery.** LinkedIn is great for verifying titles and roles, but the email itself usually lives elsewhere — their site, their GitHub, their newsletter.
+
+## The 100-Person Test
+
+Here's the fastest way to validate your ICP: send your first outreach to just 100 people who pass the 3-question screen. Track only one metric — reply rate.
+
+- Below 3% replies: your targeting is off, not your copy. Re-screen.
+- 3-8%: decent. Your message needs work, your list doesn't.
+- Above 8%: your ICP is strong. Scale the list and A/B test the message.
+
+Most people reverse this. They polish the email for days and never question the list. The list is where the reply rate lives.
+
+## The One-Email Rule
+
+Here's the uncomfortable truth: if your product is genuinely useful to a specific type of company, you don't need a giant list. You need 200 right people, not 2,000 maybes.
+
+One well-researched email to the right person outperforms ten templates to the wrong ones — every single time.
+
+---
+
+*ColdCrow helps you turn a one-line product description into personalized cold emails in seconds — with a deliverability score before you send. Try it free: copywise.vercel.app/try*
+
+`,
+  },
+    "cold-email-metrics-that-matter": {
+      title: "Cold Email Metrics That Actually Matter (And the Ones to Ignore)",
+      date: "Oct 7, 2026",
+      readTime: "5 min read",
+      content: `
+# Cold Email Metrics That Actually Matter (And the Ones to Ignore)
+
+Every cold email dashboard looks the same: a big open rate, a small reply rate, and a button to "improve deliverability." But most of those numbers are vanity metrics that lead you in the wrong direction.
+
+Here's how to read your cold email data like someone who actually wants replies.
+
+## The Metric That Matters: Reply Rate
+
+Reply rate is the only number that reflects whether your message resonated. Everything else is a proxy.
+
+- **Below 3%** — your targeting or message is off. Before rewriting copy, re-examine who you're emailing.
+- **3-8%** — healthy for cold outreach. Now A/B test subject lines and first sentences.
+- **Above 8%** — strong. Scale the list carefully and protect the sender reputation that got you here.
+
+## Open Rate: Useful Only as a Ceiling
+
+Open rate tells you about your subject line, nothing else. A 60% open rate with a 2% reply rate means your subject line is great and your content isn't.
+
+Two caveats:
+- **Apple Mail Privacy Protection** inflates open rates (pixels load without real opens). Don't tune your email based on a 5% movement in opens.
+- Open rate is a ceiling check: if it's under 20%, your subject line or sender reputation needs work before anything else.
+
+## Bounce Rate: The Safety Metric
+
+A bounce rate above 3% damages your sender reputation and pushes future emails to spam. Keep it low by verifying addresses before sending — never send to a list you scraped without validation.
+
+## Spam Complaint Rate: The Kill Switch
+
+Over 0.1% complaints (1 in 1,000) and providers start filtering you. Over 0.3% and you're in danger of blacklisting. Complaints come from three places: no relevance, no opt-out, or emailing people who never agreed to hear from you.
+
+## Reply-to-Reply Quality: The Metric Nobody Tracks
+
+The best signal isn't how many replies — it's what the replies say.
+
+- "Not interested" — your targeting was wrong or your value prop was unclear.
+- "Can you send more info?" — you were relevant, but you buried the lead.
+- "Let's talk" — you nailed it. Study what this email did differently and do it again.
+
+## The Only Dashboard You Need
+
+Ignore the fancy charts. Track five numbers per batch:
+
+| Metric | Healthy Range |
+|---|---|
+| Bounce rate | Under 3% |
+| Open rate | 30-60% |
+| Reply rate | 3%+ |
+| Complaint rate | Under 0.1% |
+| Positive replies | As many as possible |
+
+## A Note on Volume
+
+A common trap: sending more to compensate for a low reply rate. That's like turning up the radio because you're lost. Fix the message and the list first — then scale.
+
+One hundred relevant emails that get 8% replies will outperform a thousand generic ones at 1% — with a fraction of the sender-reputation risk.
+
+---
+
+*ColdCrow scores your cold email for deliverability before you send — so you fix problems in the draft, not after 500 sends. Try it free: copywise.vercel.app/try*
+
+`,
+  },
     "how-to-find-email-addresses": {
     title: "How to Find Anyone's Email Address for Cold Outreach (Free Methods)",
     date: "Oct 5, 2026",
