@@ -9,7 +9,121 @@ const POSTS: Record<
   string,
   { title: string; date: string; readTime: string; content: string }
 > = {
-    "how-to-find-email-addresses": {
+    "cold-email-personalization-examples": {
+    title: "Cold Email Personalization: 7 Examples That Actually Get Replies",
+    date: "2026-10-04",
+    description: "Generic cold emails get deleted. Here are 7 real personalization examples that get replies.",
+    content: `
+## Why Hi + Name Does Not Work Anymore
+
+Everyone uses merge tags. When a prospect reads a greeting followed by a pitch that could apply to any company, they know it is automated and they delete it.
+
+Real personalization is research plus specificity. It shows the prospect you spent 5 minutes understanding their business, not 5 seconds running a mail merge.
+
+Here are 7 levels of personalization, from easiest to hardest, each with an example that works.
+
+## 1. Company-Level Personalization
+
+Mention something specific about their company: a product launch, funding round, hiring spree, or a change on their website.
+
+Example:
+
+Hi Maya,
+
+Saw you launched the new mobile app last week; the onboarding flow is clean.
+
+We help SaaS teams like yours run outbound that does not feel like spam. We built a tool that writes a personalized first line for every prospect in about 30 seconds.
+
+Worth a 15-minute look? Here is how it works: https://copywise.vercel.app/try
+
+## 2. Trigger-Based Personalization
+
+Base your email on something that just happened: a new job, a funding announcement, a new competitor, or a fresh integration.
+
+Example:
+
+Hi David,
+
+Congrats on the Series A; 12M is a big statement in this market.
+
+When founders scale from 3 to 30 salespeople, outbound quality usually drops. Most teams solve it with templates that all sound the same.
+
+We built an AI writer that keeps every rep email specific to the prospect. Free to try: https://copywise.vercel.app/try
+
+## 3. Product-Specific Personalization
+
+Reference a specific feature or page of their product. This requires visiting their site, which is exactly why it works.
+
+Example:
+
+Hi Priya,
+
+Your pricing page mentions outbound with personalized sequences; curious how you are handling the personalization part today.
+
+We built ColdCrow to generate personalized cold emails from a prospect profile in seconds. If you are testing tools in this space, it is free: https://copywise.vercel.app/try
+
+## 4. Mutual-Connection Personalization
+
+If you share a connection, mention them with permission. Warm intros convert 3-5x better than cold ones.
+
+Example:
+
+Hi Tom,
+
+Ran into Sarah Chen last week at a founder meetup; she mentioned you are building something interesting in the data space.
+
+Quick question: how are you approaching outbound right now?
+
+## 5. Content-Based Personalization
+
+Reference something they wrote, posted, or spoke about. This works brilliantly on LinkedIn and X.
+
+Example:
+
+Hi Rachel,
+
+Your post about SDR burnout got 400+ likes; the point about reply rates hit hard.
+
+We built a tool that makes SDR lives easier: personalized emails in seconds, so they stop copy-pasting templates. Curious if you have tried anything like it: https://copywise.vercel.app/try
+
+## 6. Pain-Point Personalization
+
+Name their likely problem, but only after you confirmed it from real signals: job postings, support pages, or review sites.
+
+Example:
+
+Hi Marcus,
+
+Saw you are hiring a second SDR; most teams at that stage struggle to keep reply rates above 3 percent as volume grows.
+
+We help teams keep personalization high while scaling volume. If that is the problem you are solving, here is a 30-second look: https://copywise.vercel.app/try
+
+## 7. The No-Pitch Personalization
+
+The boldest move: send an email with zero pitch. Just a genuine question or observation. It earns a reply because there is nothing to sell.
+
+Example:
+
+Hi Elena,
+
+Not pitching anything; genuinely curious: how did you decide between building outbound in-house versus using an agency?
+
+I am researching how B2B teams approach this and your take would help.
+
+## The Golden Rule
+
+Personalization is a spectrum, not a checkbox. A prospect can tell the difference between a generic greeting and an email that references their actual product page.
+
+The minimum viable personalization: company name plus one specific detail from their website, in the first two sentences.
+
+## The ColdCrow Approach
+
+ColdCrow does the research part for you: paste a prospect profile, get a personalized email with a deliverability score in seconds. No merge-tag spam, no robotic templates.
+
+Try it free, no signup needed: https://copywise.vercel.app/try
+`,
+  },
+  "how-to-find-email-addresses": {
     title: "How to Find Anyone's Email Address for Cold Outreach (Free Methods)",
     date: "Oct 5, 2026",
     readTime: "7 min read",
