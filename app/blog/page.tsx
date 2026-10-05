@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-ab-testing",
+    title: "Cold Email A/B Testing: The Framework That Doubles Reply Rates",
+    description:
+      "You can't improve what you don't measure. Here is the 2026 A/B testing framework for cold email: what to test first, how many variations you need, and the metrics that actually predict replies.",
+    date: "Oct 5, 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "how-to-find-email-addresses",
     title: "How to Find Anyone's Email Address for Cold Outreach (Free Methods)",
     description:
