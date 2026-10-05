@@ -128,6 +128,12 @@ export default function TryPage() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
+            <Link
+              href="/pricing"
+              className="block text-sm font-medium text-primary hover:underline"
+            >
+              Or upgrade to Pro for unlimited generations →
+            </Link>
             <p className="text-sm text-muted-foreground">
               Already have an account?{" "}
               <Link href="/login" className="text-primary hover:underline">
@@ -261,6 +267,12 @@ export default function TryPage() {
                     Sign Up Free
                     <ArrowRight className="ml-1 h-3 w-3" />
                   </Button>
+                </Link>
+                <Link
+                  href="/followup"
+                  className="text-xs text-muted-foreground hover:text-primary"
+                >
+                  Need the follow-up sequence too? Try our free builder →
                 </Link>
               </div>
             </div>
