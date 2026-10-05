@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-personalization-scale",
+    title: "Cold Email Personalization at Scale: How to Sound Human in 200 Emails a Day",
+    description:
+      "Real personalization doesn't require 30 minutes per prospect. The 80/20 of personalization, a 10-minute research loop, and a template that lets you sound human at volume.",
+    date: "Oct 8, 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "how-to-find-right-person-to-email",
     title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
     description:
