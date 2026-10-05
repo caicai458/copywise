@@ -170,6 +170,102 @@ Research the prospect, write the specific line, and let the body do the rest.
 
 `,
   },
+    "cold-email-for-agencies": {
+      title: "Cold Email for Agencies: The Playbook for Landing Clients",
+      date: "Oct 9, 2026",
+      readTime: "6 min read",
+      content: `
+# Cold Email for Agencies: The Playbook for Landing Clients
+
+For agencies, cold email isn't optional — it's the highest-ROI client acquisition channel there is. No ad spend, no conference fees, just a list of decision-makers and a message that earns a reply.
+
+Here's the playbook that works for agencies of every size.
+
+## Why Agencies Fail at Cold Email
+
+The #1 mistake: agencies pitch their services like a brochure. "We're a full-service digital agency with 10 years of experience." Nobody reads past the first sentence.
+
+The #2 mistake: they email the wrong person. The CMO is the wrong target for a $3k/month retainer — the founder or head of marketing at a company just past product-market fit is right.
+
+The #3 mistake: they send one email and give up. Follow-ups get most replies, and most agencies send zero.
+
+## The 3-Email Sequence That Works
+
+**Email 1 (Day 0): The Specific Observation**
+
+Not "I love your brand." Something they didn't ask for but immediately recognize as true:
+
+\`\`\`
+Hi {name},
+
+Noticed {company} just launched {product/feature}. The positioning is strong, but your {specific page/campaign} is leaving {specific gap} on the table.
+
+I run a {your niche} agency — we helped {similar company} {specific result} with {specific tactic}.
+
+Curious if {specific gap} is something you're thinking about right now.
+
+— {Your name}
+\`\`\`
+
+**Email 2 (Day 3): The Proof**
+
+No re-pitch. Just one result, one number, one client story:
+
+\`\`\`
+Hi {name},
+
+Thought this might be useful: one of our clients went from {number} to {number} in {timeframe} using {tactic}. Happy to share the breakdown if useful.
+
+— {Your name}
+\`\`\`
+
+**Email 3 (Day 7): The Soft Breakup**
+
+\`\`\`
+Hi {name},
+
+No worries if the timing isn't right — I'll close the loop here. If {their situation} changes in the next few months, my inbox is open.
+
+— {Your name}
+\`\`\`
+
+The breakup email gets more replies than you'd expect. People reply to say "actually, let's talk."
+
+## The List: 20 Right Clients Beat 2,000 Wrong Ones
+
+Build the list manually at first:
+
+1. **Find companies with a recent trigger** — new funding, new hire, new launch, new feature. Triggers mean budget and attention.
+2. **Confirm they outsource** — check their LinkedIn for "agency" in their history, or job posts for "manage our agency partners."
+3. **Find the right person** — founder at companies under 20 people, head of marketing above that. The person who owns the budget.
+4. **Verify the email** — free tools, or pattern-guess with verification.
+
+Twenty companies with a trigger beat two thousand random CMOs, every single time.
+
+## The Offer: Make the First Step Easy
+
+Don't sell the retainer in email. Sell the call — or better, sell the audit:
+
+- "Happy to send a 5-point teardown of your landing page, no strings attached."
+- "Want a 15-minute call? I'll bring one specific idea for {their channel}."
+
+The audit call converts at a wildly higher rate than the "let's discuss how we can help" call. You show value before you ask for anything.
+
+## The Rule That Keeps Your Domain Alive
+
+- One email thread per prospect, max 3 touches
+- Never more than 30 new prospects per day from one mailbox
+- No attachments, no links until they reply (unless the link IS the offer)
+- Track: replies, calls booked, clients won. Ignore everything else.
+
+Agency cold email is a numbers game with a quality filter. Research the trigger, write the observation, follow up twice, and offer the audit. The clients are out there.
+
+---
+
+*ColdCrow turns a one-line description of your agency into a personalized cold email with a deliverability score — so the research you do turns into emails that actually get sent. Try it free: copywise.vercel.app/try*
+
+`,
+  },
     "how-to-find-right-person-to-email": {
       title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
       date: "Oct 7, 2026",
