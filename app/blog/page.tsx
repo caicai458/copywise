@@ -5,6 +5,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "how-to-find-right-person-to-email",
+    title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
+    description:
+      "Your reply rate is decided before you write a word - by who you email. A 3-question screen for choosing targets, where to find their emails, and the 100-person test that validates your ICP.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-metrics-that-matter",
+    title: "Cold Email Metrics That Actually Matter (And the Ones to Ignore)",
+    description:
+      "Reply rate is the only number that reflects whether your message resonated. Which cold email metrics to track, which to ignore, and the five-number dashboard that predicts success.",
+    date: "Oct 7, 2026",
+    readTime: "5 min read",
+  },
+  {
     slug: "cold-email-follow-up-framework",
     title: "The Follow-Up Email That Gets Replies (Day 3/7/14 Framework)",
     description:
