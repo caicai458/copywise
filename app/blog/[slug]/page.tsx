@@ -9,6 +9,83 @@ const POSTS: Record<
   string,
   { title: string; date: string; readTime: string; content: string }
 > = {
+    "cold-email-personalization-scale": {
+      title: "Cold Email Personalization at Scale: How to Sound Human in 200 Emails a Day",
+      date: "Oct 8, 2026",
+      readTime: "7 min read",
+      content: `
+# Cold Email Personalization at Scale: How to Sound Human in 200 Emails a Day
+
+Everyone tells you to personalize. Nobody tells you how to do it when you're sending 200 emails a day without a team.
+
+The good news: real personalization doesn't require 30 minutes per prospect. It requires a system. Here's the one that works.
+
+## The 80/20 of Personalization
+
+Study 100 replies you've gotten. You'll find the same pattern: prospects respond when you reference something specific about their company — a product change, a job posting, a recent launch, a specific page on their site.
+
+Here's the uncomfortable truth: you only need ONE specific detail per email. One line of researched relevance beats four paragraphs of generic praise.
+
+## The 10-Minute Research Loop
+
+For each prospect, run this loop:
+
+**Minute 1-2: Their website.** What do they sell? Who do they sell to? What's their headline claim?
+
+**Minute 3-4: Their changelog or news.** What changed this month? New feature? New customer? New hire?
+
+**Minute 5-6: Their content.** One blog post or LinkedIn post from the last 30 days. What's the topic? What's their opinion?
+
+**Minute 7-8: Find the angle.** Pick ONE of these three:
+- "I saw your new [feature]" — relevant if you complement it
+- "Your post on [topic]" — relevant if you can add value
+- "You're hiring for [role]" — relevant if you help with that workflow
+
+**Minute 9-10: Write the first sentence.** Put the specific detail in sentence one. Everything else is boilerplate.
+
+## The Template That Lets You Scale
+
+\`\`\`
+Hi {first name},
+
+{Sentence 1: one specific detail about their company or content}
+
+{One line about your product, tied to their situation}
+
+{One question — low effort, specific to their context}
+
+{Sign-off}
+\`\`\`
+
+The magic is in the constraint: only sentence one changes. That's what makes it scalable — you research one angle, write one sentence, and the rest is a template you've already perfected.
+
+## Batch Your Research
+
+Here's the workflow that makes this fast:
+
+1. **Build the list on Monday.** 200 prospects who pass your ICP screen.
+2. **Research in blocks.** 20 prospects at a time, 10 minutes each = 200 minutes. One focused session, not 200 interruptions.
+3. **Write sentence one immediately** after researching each prospect, while the detail is fresh.
+4. **Send in waves of 20-30** across the week — never 200 in one day (deliverability and spam risk).
+
+## What Personalization Actually Buys You
+
+Realistic numbers: a generic blast gets 1-3% replies. One researched line gets 5-8% on most lists — sometimes 10%+ if the ICP is tight.
+
+That's not a small difference. On 1,000 emails, that's 50 vs 10 replies. Five times the conversations from the same effort.
+
+## The Hard Rule
+
+If you can't find one specific detail in 10 minutes, skip the prospect. A generic email to the wrong person wastes your sender reputation faster than it builds pipeline.
+
+Fewer, better, researched — every time.
+
+---
+
+*ColdCrow turns a one-line product description into a personalized cold email with a deliverability score — so the research you do goes into an email that actually gets sent. Try it free: copywise.vercel.app/try*
+
+`,
+  },
     "how-to-find-right-person-to-email": {
       title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
       date: "Oct 7, 2026",
