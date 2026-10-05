@@ -896,7 +896,200 @@ Subject lines matter for opens, but with a good sender reputation and a clean do
 
 After fixing deliverability and testing offer clarity, most teams see reply rates move from 1-2 percent to 3-5 percent. Personalization depth adds another 1-2 points. Length and subject lines are the finishing touches.
 `
-  },};
+  },    "cold-email-follow-up-framework": {
+    title: "The Follow-Up Email That Gets Replies (Day 3/7/14 Framework)",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+    content: `
+Most cold email replies come from the follow-up, not the first touch.
+
+The data is consistent across tools: 60–70% of replies happen after the first email, in the follow-up sequence. And yet the majority of senders fire one email, wait a week, and call it done.
+
+If you're sending cold outreach, the follow-up isn't optional — it's where the ROI lives.
+
+## The 3-touch rhythm that works
+
+The goal isn't to annoy. It's to stay present while the prospect's priorities shift. Three touches, spread over two weeks, each with a different job:
+
+**Day 3 — Gentle nudge.**
+Your first email got buried under 200 others. The nudge is short and honest: "Just floating this back up in case it got lost." No new pitch, no value re-statement. One or two lines.
+
+**Day 7 — Value add, no ask.**
+This is the highest-leverage email in the sequence. Share something genuinely useful — a relevant stat, a mini-analysis of their situation, a resource. Attach zero ask. The point is to be the person who gave before asking.
+
+**Day 14 — Clean close.**
+"I'm closing my file on this, but the door stays open." This gets replies more than any pushy "just checking in" — because it removes pressure, and people respond to a graceful exit.
+
+## Why Day 7 works harder than Day 3
+
+The nudge (Day 3) keeps you top-of-mind. The close (Day 14) creates a clean psychological endpoint. But the value add (Day 7) is where the relationship shifts from "sender" to "useful person."
+
+No ask attached. Just useful. When you finally do ask (in a later sequence, or when they reply), the ask lands in a different context.
+
+## What kills follow-ups
+
+- **Same message re-sent.** Copy-paste with a new date reads as spam instantly.
+- **Guilt-tripping.** "Just following up on my previous email" repeated 4 times is pressure, not presence.
+- **No value.** Three emails that all ask "did you see this?" give the prospect nothing to say yes to.
+
+## The 30-second version
+
+Want this built for your actual email? We made a free tool for exactly this:
+
+**Paste your cold email → get a Day 3 / Day 7 / Day 14 follow-up plan** with low-pressure, ready-to-send copy.
+
+Try it free: https://copywise.vercel.app/followup
+`
+  },
+    "cold-email-deliverability-mistakes": {
+    title: "Cold Email Deliverability: 9 Mistakes That Send You to Spam",
+    date: "Oct 6, 2026",
+    readTime: "6 min read",
+    content: `
+You wrote a good cold email. Personalized, short, clear CTA.
+
+And it went to spam.
+
+Deliverability isn't about the copy — it's about the plumbing. Here are the 9 mistakes that send your outreach to the spam folder, and what to do instead.
+
+## 1. Sending from a domain with no warm-up
+A brand-new domain that starts blasting 500 emails on day one gets flagged immediately. **Fix:** warm up over 2–4 weeks, starting at 10–20 emails/day and scaling up.
+
+## 2. No SPF, DKIM, or DMARC records
+These three DNS records prove you're allowed to send from that domain. **Fix:** set all three up before your first send — they're free and take minutes.
+
+## 3. A .com domain you just bought
+Fresh domains have zero reputation. **Fix:** let the domain age a few weeks before heavy sending, and keep the same domain for your site and your sending.
+
+## 4. Identical content to 500 people
+The spam filter compares your email to every other email you've sent. Identical templates are a mass-detection trigger. **Fix:** personalize at least one specific detail per prospect — company, role, or product mention.
+
+## 5. Link-heavy emails
+Three links in your first email to a stranger is a spam signature. **Fix:** one link maximum. Better: zero links in the first touch — reply first, link later.
+
+## 6. Salesy words in the subject line
+"Free," "Guaranteed," "Act now," "$$$" — these are classic spam-trigger words. **Fix:** write subject lines a human would: specific, boring, and relevant.
+
+## 7. No plain-text version
+Some email clients render only the plain-text version, and HTML-only emails can look like phishing. **Fix:** always send a text/plain alternative.
+
+## 8. Buying lists
+Purchased lists are full of dead addresses and spam traps — one trap and your domain's reputation takes a hit. **Fix:** build your own list, one verified prospect at a time.
+
+## 9. Ignoring bounce rates
+A bounce rate above 5% tells Google and Microsoft your list is dirty. **Fix:** clean bounces immediately, remove hard bounces permanently, and keep soft bounces under 2%.
+
+## The fast path
+
+Deliverability is a checklist, not a mystery. And personalization is the one variable you control on every email.
+
+We built ColdCrow to make the personalization part instant: describe a prospect, get a personalized cold email with a **deliverability score** in seconds — so you never send a spam-suspect email again.
+
+Try it free — no signup needed: https://copywise.vercel.app/try
+`
+  },
+    "cold-email-vs-linkedin-outreach": {
+    title: "Cold Email vs LinkedIn Outreach: Which Works in 2026",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+    content: `
+## The Two Pillars of Outbound
+
+Every B2B founder eventually asks: should I send cold emails or LinkedIn messages? The honest answer: both, but for different jobs.
+
+## Cold Email: The Scale Play
+
+- **Reach**: Unlimited by connection limits - anyone with an email is reachable
+- **Reply rates**: 1-5% depending on list quality and personalization
+- **Effort per message**: High if done right (research + personalization)
+- **Deliverability**: The bottleneck - SPF/DKIM/DMARC, warmup, volume limits
+- **Best for**: Companies with a clear ICP and a product people can evaluate from a link
+
+Cold email rewards research. A personalized first line referencing their product or a recent change doubles reply rates. Generic mail merges die.
+
+## LinkedIn: The Relationship Play
+
+- **Reach**: Limited by connection request quotas (weekly caps, ~100-200 new requests)
+- **Reply rates**: 10-30% on messages to warm connections; lower on cold connection requests
+- **Effort per message**: Low to medium
+- **Deliverability**: No DNS to configure, but account health limits you
+- **Best for**: Building relationships, warm intros, following up after cold email
+
+LinkedIn is better for the long game: comments on their posts, a thoughtful first message, and a slow build. It converts slower but compounds.
+
+## The 2026 Pattern That Works
+
+Most successful outbound teams use a hybrid:
+
+1. **Cold email first** - personalized, low-pressure, with a clear CTA
+2. **LinkedIn follow-up** - 2-3 days later, "saw you might have missed my email" or a comment on their recent post
+3. **LinkedIn presence** - comment on their content weekly so your name is familiar before you ever pitch
+
+The combination beats either channel alone: email for reach, LinkedIn for warmth.
+
+## The Cold Email Shortcut
+
+Writing personalized emails at scale is the hard part - that is why tools like ColdCrow exist. Paste a prospect profile, get a researched-feeling email with a deliverability score in seconds. The research is still yours; the writing gets faster.
+
+**slug**: cold-email-vs-linkedin-outreach
+**date**: 2026-10-05
+`
+  },
+    "write-cold-email-10-minutes": {
+    title: "How to Write a Cold Email in 10 Minutes (Template Inside)",
+    date: "Oct 6, 2026",
+    readTime: "4 min read",
+    content: `
+|
+| 1. Hook | Reference the specific thing | "Saw your post on Stripe rate limits — the checkout-point analysis was spot on." |
+| 2. Context | What you do, in one line | "I build ColdCrow, an AI cold email writer for B2B founders." |
+| 3. Question | One low-pressure question | "Curious how you're handling refunds at that scale?" |
+| 4. Close | Soft exit | "Either way, keep building. — ColdCrow" |
+
+That's it. 4 sentences. If you can't write it in 2 minutes, you don't have enough of a hook — go back to minute 3.
+
+## Minute 8-9: Cut it in half
+
+Every cold email has 30% fat. Delete:
+- Your company's history
+- The feature list
+- "I hope this email finds you well"
+
+## Minute 10: Check the 3 spam killers
+
+Before you hit send:
+1. One link maximum (zero is safer for the first touch)
+2. No salesy subject words ("free," "guaranteed," "limited time")
+3. One CTA only (one question, not three options)
+
+## The template you can steal
+
+\`\`\`
+Subject: [their specific thing]
+
+Hi [name],
+
+[Their specific thing] — [one-line observation about it].
+
+I build [your product], [what it does in 10 words].
+
+Curious how you [question about their world]?
+
+Either way, keep building.
+
+— [Your name]
+\`\`\`
+
+## The 1-minute shortcut
+
+If 10 minutes still feels like too much, the writing is the bottleneck — not the research.
+
+ColdCrow does the writing: describe a prospect, get a **personalized cold email with a deliverability score** in seconds. You keep the research; the first draft is instant.
+
+Try it free — no signup: https://copywise.vercel.app/try
+`
+  },
+  };
 
 export default async function BlogPostPage({
   params,
