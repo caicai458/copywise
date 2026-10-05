@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-for-agencies",
+    title: "Cold Email for Agencies: The Playbook for Landing Clients",
+    description:
+      "Why agencies fail at cold email, the 3-email sequence that books calls, and the list-building rule that beats 2,000 wrong prospects with 20 right ones.",
+    date: "Oct 9, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "cold-email-subject-lines-that-get-opened",
     title: "Cold Email Subject Lines That Get Opened: What Actually Works in 2026",
     description:
