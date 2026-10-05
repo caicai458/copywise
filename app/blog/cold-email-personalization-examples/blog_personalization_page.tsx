@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cold Email Personalization: 7 Examples That Actually Get Replies",
   description:
-    "Generic cold emails get deleted. Here are 7 real personalization examples - company-level, trigger-based, product-specific, mutual-connection, content-based, pain-point, and micro - that get replies.",
+    "Generic cold emails get deleted. Here are 7 real personalization examples in 2026 - company-level, trigger-based, product-specific, mutual-connection, content-based, pain-point, and micro - that get replies.",
   openGraph: {
     title: "Cold Email Personalization: 7 Examples That Actually Get Replies",
     description:
