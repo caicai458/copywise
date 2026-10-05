@@ -220,7 +220,8 @@ export default function TryPage() {
 
               You&apos;ve used all {TRIAL_LIMIT} free trial generations.
 
-              Sign up to get <strong>5 free generations every day</strong>!
+              Start your <strong>30-day Pro trial</strong> for unlimited
+              generations — or grab a free account for 5 a day.
 
             </CardDescription>
 
@@ -266,11 +267,11 @@ export default function TryPage() {
 
             </div>
 
-            <Link href="/signup">
+            <Link href="/signup?plan=pro">
 
               <Button size="lg" className="w-full">
 
-                Sign Up Free
+                Start 30-Day Free Trial
 
                 <ArrowRight className="ml-2 h-4 w-4" />
 
@@ -280,13 +281,13 @@ export default function TryPage() {
 
             <Link
 
-              href="/pricing"
+              href="/signup"
 
               className="block text-sm font-medium text-primary hover:underline"
 
             >
 
-              Or upgrade to Pro for unlimited generations →
+              Or get a free account (5 generations/day) →
 
             </Link>
 
