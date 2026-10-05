@@ -86,6 +86,90 @@ Fewer, better, researched — every time.
 
 `,
   },
+    "cold-email-subject-lines-that-get-opened": {
+      title: "Cold Email Subject Lines That Get Opened: What Actually Works in 2026",
+      date: "Oct 8, 2026",
+      readTime: "6 min read",
+      content: `
+# Cold Email Subject Lines That Get Opened: What Actually Works in 2026
+
+Your email can be perfect. If the subject line doesn't get the open, nobody reads it.
+
+Here's what data from millions of cold emails actually says about subject lines — and how to write ones that get opened without sounding like spam.
+
+## What the Open Data Says
+
+Across large cold outreach datasets, the pattern is consistent:
+
+**3-5 words beats 8+.** Short subject lines get measurably higher open rates than long ones. Attention is a single glance.
+
+**Specific beats clever.** "Quick question about your pricing page" out-opens "Is this the year you finally scale?" every time. Specificity signals relevance; cleverness signals a pitch.
+
+**Personal names lift opens — a little.** Using a first name in the subject helps on some lists, hurts on others, and matters far less than people claim. It's a tiebreaker, not a strategy.
+
+## The Four Subject Lines That Work
+
+**1. The Specific Reference**
+\`\`\`
+Re: your onboarding flow
+About your new pricing page
+Your job post for [role]
+\`\`\`
+Best for: prospects you actually researched. It says "this is not a blast."
+
+**2. The Curiosity Gap (one concrete detail)**
+\`\`\`
+The metric your dashboard hides
+Why churn dropped at [competitor]
+\`\`\`
+Best for: founders and product people. Give one hint, not the answer.
+
+**3. The Question**
+\`\`\`
+Quick question about [their product]
+Is [their thing] still manual?
+Who owns outreach at [company]?
+\`\`\`
+Best for: SDRs and ops people. Easy to answer = easy to reply.
+
+**4. The Status Claim**
+\`\`\`
+[Their company] + [your category]
+A tool for [their specific problem]
+\`\`\`
+Best for: when you have a genuinely strong fit and want to look like a peer.
+
+## Subject Lines That Get You Spammed
+
+Avoid these patterns — they trigger spam filters and train prospects to delete:
+
+- **ALL CAPS** or multiple exclamation marks!!!
+- **"Re:" when you never emailed before** — the fastest way to lose trust
+- **"Quick question" to someone you researched for 2 minutes** — if it's not quick, don't say it is
+- **"Following up" with no prior email** — same as fake Re:
+- **Emoji as the hook** — emojis work in some niches, but on cold email they read as bulk mail
+- **"Are you the right person?"** — it's the most common lazy opener in B2B
+
+## The 10-Minute Subject Line Process
+
+1. **Write the email body first.** The subject should summarize the email's one core idea — not be written before it.
+2. **Write 5 subject candidates.** Three specific-reference, one question, one curiosity gap.
+3. **Cut the weakest two.** Short is better — aim for 4-6 words.
+4. **Read them aloud.** If it sounds like a salesman, rewrite.
+5. **Send, and log the open rate per subject.** After 50 sends, keep your top performer and retire the bottom.
+
+## Subject Lines Are a Lever, Not a Silver Bullet
+
+A great subject line on a generic email gets opened — and deleted. The subject's job is one thing only: earn the open. The body has to deliver the relevance the subject promised.
+
+Research the prospect, write the specific line, and let the body do the rest.
+
+---
+
+*ColdCrow writes the subject line and body together — personalized to the prospect, with a deliverability score before you send. Try it free: copywise.vercel.app/try*
+
+`,
+  },
     "how-to-find-right-person-to-email": {
       title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
       date: "Oct 7, 2026",
