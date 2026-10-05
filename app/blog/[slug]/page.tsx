@@ -844,7 +844,59 @@ Do the unglamorous work, and your cold email will land where it belongs — the 
 `,
   },
 
-};
+  "cold-email-ab-testing": {
+    title: "Cold Email A/B Testing: What to Test First",
+    date: "Oct 5, 2026",
+    readTime: "4 min read",
+    content: `
+# Cold Email A/B Testing: What to Test First
+
+Teams test subject lines first because they are easy. But subject lines move open rates, not reply rates — and in cold email, replies are the only metric that pays rent.
+
+The right order targets the variables with the biggest leverage first: deliverability, then offer clarity, then personalization depth, then length, then subject lines.
+
+## 1. Test Your Sending Infrastructure First
+
+Before any copy test, check the foundation: SPF, DKIM, DMARC, dedicated sending domain, and warmup state.
+
+If your emails land in promotions or spam, no copy test matters. Fix deliverability before touching a single word.
+
+## 2. Test Offer Clarity (The One-Liner)
+
+The single highest-leverage copy variable: can a prospect understand what you do and why it matters in under 5 seconds?
+
+Test two versions of your first paragraph:
+- Version A: feature-led ("We provide AI-powered cold email software with deliverability scoring")
+- Version B: outcome-led ("Write a cold email that gets replies — in 20 seconds, without sounding like a bot")
+
+## 3. Test Personalization Depth
+
+Real personalization (a company-specific detail in line one) beats merge-tag personalization (first name only). Test one researched detail versus none.
+
+The detail does not need to be impressive. A pricing page observation, a recent hire, a new integration — anything that proves you looked.
+
+## 4. Test Length
+
+Shorter emails win on mobile and get read faster. Test a 60-word version against a 150-word version.
+
+Rule of thumb: cut every sentence that does not move the reader toward a reply. If a line does not create curiosity or clarity, delete it.
+
+## 5. Test Subject Lines Last
+
+Subject lines matter for opens, but with a good sender reputation and a clean domain, opens are not the bottleneck. Test subject lines only after the above four are stable.
+
+## The Minimum Viable Test Setup
+
+- One variable at a time (changing two things means you cannot attribute the result)
+- 50-100 sends per variation for statistical signal
+- Same time window, same segment
+- Track replies, not opens
+
+## What Good Looks Like
+
+After fixing deliverability and testing offer clarity, most teams see reply rates move from 1-2 percent to 3-5 percent. Personalization depth adds another 1-2 points. Length and subject lines are the finishing touches.
+`
+  },};
 
 export default async function BlogPostPage({
   params,
