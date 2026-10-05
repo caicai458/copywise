@@ -5,6 +5,38 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-follow-up-framework",
+    title: "The Follow-Up Email That Gets Replies (Day 3/7/14 Framework)",
+    description:
+      "Most cold email replies come from the follow-up, not the first touch - but 90% of senders never send one. Here's the 3-touch rhythm that works without being annoying.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-deliverability-mistakes",
+    title: "Cold Email Deliverability: 9 Mistakes That Send You to Spam",
+    description:
+      "Your cold emails are landing in spam. Here are the 9 mistakes killing your deliverability - and the fixes that get you into the inbox.",
+    date: "Oct 6, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-vs-linkedin-outreach",
+    title: "Cold Email vs. LinkedIn Outreach: Which One Works for B2B?",
+    description:
+      "Cold email and LinkedIn outreach both work - but for different buyers, at different stages. Here's how to pick the right channel for your product.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "write-cold-email-10-minutes",
+    title: "How to Write a Cold Email in 10 Minutes (Template Inside)",
+    description:
+      "Stop staring at a blank page. Here's a 10-minute cold email writing process that produces personalized, sendable emails - with a template you can steal.",
+    date: "Oct 6, 2026",
+    readTime: "4 min read",
+  },
+  {
     slug: "cold-email-ab-testing",
     title: "Cold Email A/B Testing: The Framework That Doubles Reply Rates",
     description:
