@@ -248,3 +248,5 @@ copywise/
 
 ## License
 Proprietary. All rights reserved.
+
+<!-- maintained via automated deploy trigger -->
