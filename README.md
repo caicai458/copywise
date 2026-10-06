@@ -1,4 +1,5 @@
-# Copywise AI
+
+<!-- redeploy trigger --># Copywise AI
 
 AI-powered copywriting SaaS built with Next.js, Supabase, and Zhipu AI.
 
