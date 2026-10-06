@@ -54,15 +54,13 @@ async function creemFetch<T>(
 export async function createCheckout(
   input: CreemCheckoutInput
 ): Promise<CreemCheckout> {
+  // Creem accepts product_id + success_url (cancel_url/customer_email are
+  // rejected in test mode; checkout collects customer email itself).
   return creemFetch<CreemCheckout>("/checkouts", {
     method: "POST",
     body: JSON.stringify({
       product_id: input.price_id,
-      customer_email: input.customer_email,
-      customer_name: input.customer_name,
       success_url: input.success_url,
-      cancel_url: input.cancel_url,
-      metadata: input.metadata,
     }),
   });
 }
