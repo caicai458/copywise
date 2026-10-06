@@ -50,19 +50,30 @@ async function creemFetch<T>(
 }
 /**
  * Create a checkout session for a subscription.
+ *
+ * Test mode: Creem only accepts product_id + success_url (customer_email,
+ * cancel_url, customer_name and metadata are rejected by the test API).
+ * Live mode: pass the full payload so webhook events carry customer_email
+ * and metadata.user_id, which the webhook handler needs to associate the
+ * subscription with a local Supabase user.
  */
 export async function createCheckout(
   input: CreemCheckoutInput
 ): Promise<CreemCheckout> {
-  // Creem accepts product_id + success_url (cancel_url/customer_email are
-  // rejected in test mode; checkout collects customer email itself).
-  // The response uses "checkout_url" (not "url").
+  const isTest = CREEM_BASE_URL.includes("test");
+  const payload: Record<string, unknown> = {
+    product_id: input.price_id,
+    success_url: input.success_url,
+  };
+  if (!isTest) {
+    if (input.cancel_url) payload.cancel_url = input.cancel_url;
+    if (input.customer_email) payload.customer_email = input.customer_email;
+    if (input.customer_name) payload.customer_name = input.customer_name;
+    if (input.metadata) payload.metadata = input.metadata;
+  }
   const resp = await creemFetch<Record<string, unknown>>("/checkouts", {
     method: "POST",
-    body: JSON.stringify({
-      product_id: input.price_id,
-      success_url: input.success_url,
-    }),
+    body: JSON.stringify(payload),
   });
   return {
     id: String(resp.id || ""),
