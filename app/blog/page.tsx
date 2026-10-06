@@ -5,6 +5,36 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+import { Navbar } from "@/components/marketing/navbar";
+import { Footer } from "@/components/marketing/footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
+const POSTS = [
+  {
+    slug: "how-to-find-b2b-emails",
+    title: "How to Find B2B Prospect Email Addresses in 2026 (Free Methods)",
+    description:
+      "The exact process for finding any business email — free, in under two minutes. Pattern-guessing, public sources, and the verification pass that keeps your domain out of spam.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "email-domain-warmup-guide",
+    title: "The Email Domain Warmup Guide: Do It Right or Burn Your Domain",
+    description:
+      "A new domain that starts blasting cold email gets burned in a week. The step-by-step warmup schedule, volume ramp, and the mistakes that trigger spam filters.",
+    date: "Oct 5, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "50-personalization-ideas",
+    title: "50 Cold Email Personalization Ideas That Aren't Just 'I Noticed You're a SaaS'",
+    description:
+      "Generic personalization is worse than none. 50 concrete, low-effort personalization angles you can pull from a prospect's public footprint in under two minutes.",
+    date: "Oct 5, 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "cold-email-for-agencies",
     title: "Cold Email for Agencies: The Playbook for Landing Clients",
     description:
