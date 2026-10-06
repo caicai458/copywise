@@ -54,10 +54,10 @@ async function creemFetch<T>(
 export async function createCheckout(
   input: CreemCheckoutInput
 ): Promise<CreemCheckout> {
-  return creemFetch<CreemCheckout>("/checkout", {
+  return creemFetch<CreemCheckout>("/checkouts", {
     method: "POST",
     body: JSON.stringify({
-      productId: input.price_id,
+      product_id: input.price_id,
       customer_email: input.customer_email,
       customer_name: input.customer_name,
       success_url: input.success_url,
