@@ -74,7 +74,7 @@ export default function BlogPost() {
           <li><strong>Snov.io</strong> — free 50 credits, good for domain search</li>
           <li><strong>Mailmeteor</strong> — free verification from Gmail</li>
           <li><strong>Apollo (free tier)</strong> — 100 free credits/month, includes direct dials</li>
-          <li><strong>Google</strong> — honestly, the best tool. Search &quot;{name} {company} email&quot;</li>
+          <li><strong>Google</strong> — honestly, the best tool. Search &quot;person-name company-name email&quot;</li>
         </ul>
 
         <h2 className="pt-4 text-2xl font-semibold text-gray-900">Step 5: Verify Before You Send</h2>
