@@ -5,12 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
-import { Navbar } from "@/components/marketing/navbar";
-import { Footer } from "@/components/marketing/footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
-const POSTS = [
-  {
     slug: "how-to-find-b2b-emails",
     title: "How to Find B2B Prospect Email Addresses in 2026 (Free Methods)",
     description:
