@@ -6,6 +6,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   const blogs = [
+    "how-to-find-b2b-emails",
+    "email-domain-warmup-guide",
+    "50-personalization-ideas",
+    "cold-email-for-agencies",
+    "cold-email-subject-lines-that-get-opened",
+    "cold-email-personalization-scale",
+    "how-to-find-right-person-to-email",
+    "cold-email-metrics-that-matter",
+    "cold-email-follow-up-framework",
+    "cold-email-deliverability-mistakes",
+    "cold-email-vs-linkedin-outreach",
+    "write-cold-email-10-minutes",
+    "cold-email-ab-testing",
     "how-to-find-email-addresses",
     "cold-email-mistakes-2026",
     "cold-email-deliverability-checklist",
@@ -20,6 +33,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cold-email-guide",
     "cold-email-subject-lines",
     "cold-vs-warm-email",
+    "cold-email-metrics-2026",
+    "cold-email-psychology",
+    "cold-email-volume-limits-2026",
+    "cold-email-subject-lines-2026",
   ];
 
   return [
