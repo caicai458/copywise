@@ -30,7 +30,11 @@ async function creemFetch<T>(
       "CREEM_API_KEY is not configured. Set it in your environment variables."
     );
   }
-  const response = await fetch(`${CREEM_BASE_URL}${endpoint}`, {
+  // Normalize base URL: Creem API paths live under /v1 for both live and test.
+  const base = CREEM_BASE_URL.endsWith("/v1")
+    ? CREEM_BASE_URL
+    : `${CREEM_BASE_URL}/v1`;
+  const response = await fetch(`${base}${endpoint}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
@@ -50,10 +54,10 @@ async function creemFetch<T>(
 export async function createCheckout(
   input: CreemCheckoutInput
 ): Promise<CreemCheckout> {
-  return creemFetch<CreemCheckout>("/checkout", {
+  return creemFetch<CreemCheckout>("/checkouts", {
     method: "POST",
     body: JSON.stringify({
-      productId: input.price_id,
+      product_id: input.price_id,
       customer_email: input.customer_email,
       customer_name: input.customer_name,
       success_url: input.success_url,
