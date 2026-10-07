@@ -5,6 +5,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "bought-lists-are-dead-2026",
+    title: "Bought Lists Are Dead: How to Build a Cold Email List That Replies in 2026",
+    description:
+      "A 'verified' list of 2,000 emails got our client 0.6% replies and 12% bounces. Here is how to build a prospect list that actually replies in 2026.",
+    date: "Oct 8, 2026",
+    readTime: "8 min read",
+  },
+  {
+    slug: "signal-based-outreach",
+    title: "Signal-Based Outreach: The 2026 Playbook for Emailing People in a Buying Window",
+    description:
+      "A signal is a public event that tells you a company is about to need what you sell. Signal-based campaigns clear 15-25% reply rates while volume blasts sit at 0.5-3%.",
+    date: "Oct 8, 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "cold-email-reply-rates-2026",
     title: "Cold Email Reply Rates in 2026: What's Actually Normal",
     description:
