@@ -5,6 +5,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-reply-rates-2026",
+    title: "Cold Email Reply Rates in 2026: What's Actually Normal",
+    description:
+      "Average cold email reply rate is 3.4%. Top campaigns clear 10%+. The gap isn't volume - it's relevance. Here is the 2026 benchmark data.",
+    date: "Oct 7, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "how-to-research-a-prospect",
+    title: "How to Research a Prospect in 5 Minutes",
+    description:
+      "A researched first line is the difference between a 0.5% and a 5% reply rate. Here is the 5-minute research loop that makes every email feel personal.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "warmup-scores-lie-2026",
+    title: "Warmup Scores Lie: What Actually Gets Cold Emails Into the Inbox",
+    description:
+      "A warmup score of 90+ while your emails land in spam anyway - the #1 complaint on r/coldemail. What actually moves deliverability in 2026.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "how-to-find-b2b-emails",
     title: "How to Find B2B Prospect Email Addresses in 2026 (Free Methods)",
     description:
