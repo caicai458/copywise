@@ -5,6 +5,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-to-trial-conversion",
+    title: "From Cold Email to Trial: How to Turn Replies into Signups in 2026",
+    description:
+      "A 3% reply rate means nothing if nobody clicks. Here is the reply-to-trial funnel: the follow-up that books the click, the landing page that converts, and the trial that closes.",
+    date: "Oct 9, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "personalization-vs-automation",
+    title: "Cold Email Personalization vs. Automation: Where to Draw the Line in 2026",
+    description:
+      "Personalization at scale is a lie - until you know which 20% of touches actually need a human. The 2026 line between automated volume and researched relevance.",
+    date: "Oct 9, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "bought-lists-are-dead-2026",
     title: "Bought Lists Are Dead: How to Build a Cold Email List That Replies in 2026",
     description:
