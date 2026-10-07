@@ -5,6 +5,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "anatomy-of-perfect-cold-email",
+    title: "The Anatomy of a Perfect Cold Email in 2026",
+    description:
+      "Strip every 'perfect' cold email down to its skeleton and you get four sentences: one researched detail, one value line, one low-pressure ask, one graceful exit. Everything else lowers your reply rate.",
+    date: "Oct 9, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-investors-2026",
+    title: "How to Cold Email Investors in 2026: The Playbook That Gets Replies",
+    description:
+      "Investors get 300 cold emails a week. Yours gets 12 seconds. The thesis match, the signal, and the one small ask that actually books a call.",
+    date: "Oct 9, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-etiquette-2026",
+    title: "Cold Email Etiquette in 2026: The Do's and Don'ts That Decide Replies",
+    description:
+      "Recipients delete cold emails for tone reasons as often as relevance reasons. The 2026 etiquette rules that keep your emails out of the trash.",
+    date: "Oct 9, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "cold-email-to-trial-conversion",
     title: "From Cold Email to Trial: How to Turn Replies into Signups in 2026",
     description:
