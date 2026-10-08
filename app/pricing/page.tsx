@@ -152,6 +152,22 @@ export default function PricingPage() {
               </Card>
             </div>
 
+            {/* Trust bar - risk-reversal for checkout */}
+            <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center justify-center gap-2.5 text-sm text-muted-foreground sm:flex-row sm:gap-8">
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 shrink-0 text-primary" />
+                30-day free trial, no credit card
+              </span>
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 shrink-0 text-primary" />
+                Cancel anytime
+              </span>
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 shrink-0 text-primary" />
+                Email support, replies within 24h
+              </span>
+            </div>
+
             {/* CN RMB payment */}
             <div className="mx-auto max-w-md">
               <PayCN />
