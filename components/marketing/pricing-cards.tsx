@@ -104,6 +104,25 @@ export const PRO_PLAN = {
   ctaHref: "/signup?plan=pro",
 };
 
+export const PRO_YEARLY_PLAN = {
+  name: "Pro Yearly",
+  price: "$23.20",
+  priceNote: "per month, billed annually",
+  yearlyTotal: "$278.40/year",
+  savings: "Save $69.60 vs monthly",
+  description: "Same Pro features, billed annually. Best value.",
+  features: [
+    "100 AI generations per day",
+    "All copy formats (emails, social, ads, product descriptions, blog intros)",
+    "Copy history and favorites",
+    "Priority support",
+    "GDPR-compliant data handling",
+    "Save $69.60 per year vs monthly",
+  ],
+  cta: "Upgrade to Pro - Yearly",
+  ctaHref: "/signup?plan=pro_yearly",
+};
+
 export function PricingCards() {
   return (
     <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
