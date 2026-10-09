@@ -148,6 +148,11 @@ export default function PricingPage() {
                       {PRO_PLAN.cta}
                     </TrackLink>
                   </Button>
+                  <Button asChild variant="outline" size="lg" className="mt-3 w-full">
+                    <Link href="https://www.creem.io/payment/prod_1H3LCIL8pCxwbRvYa1oFkJ" target="_blank" rel="noopener noreferrer">
+                      Pay Now with Card
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
               {/* Pro Yearly */}
@@ -189,6 +194,11 @@ export default function PricingPage() {
                     <TrackLink href={PRO_YEARLY_PLAN.ctaHref} event="checkout_clicked" params={{ plan: "pro_yearly" }}>
                       {PRO_YEARLY_PLAN.cta}
                     </TrackLink>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="mt-3 w-full">
+                    <Link href="https://www.creem.io/payment/prod_52Xu3CcZgVqCSOPrxPqcAW" target="_blank" rel="noopener noreferrer">
+                      Pay Now with Card
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
