@@ -8,7 +8,7 @@ const SECRET = process.env.HUPIJAO_SECRET || "";
 
 const PRICES: Record<string, string> = {
   pro_monthly: "99.00",
-  pro_yearly: "399.00",
+  pro_yearly: "950.40",
 };
 
 const TITLES: Record<string, string> = {
