@@ -12,7 +12,7 @@ import {
 import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
 import { TrackLink } from "@/components/marketing/track-link";
-import { FREE_PLAN, PRO_PLAN } from "@/components/marketing/pricing-cards";
+import { FREE_PLAN, PRO_PLAN, PRO_YEARLY_PLAN } from "@/components/marketing/pricing-cards";
 import PayCN from "./PayCN";
 export const metadata: Metadata = {
   title: "Pricing",
@@ -71,7 +71,7 @@ export default function PricingPage() {
               </p>
             </div>
             {/* Plan cards */}
-            <div className="mx-auto mt-16 grid max-w-4xl gap-8 md:grid-cols-2">
+            <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
               {/* Free */}
               <Card>
                 <CardHeader>
@@ -143,6 +143,48 @@ export default function PricingPage() {
                   <Button asChild size="lg" className="mt-8 w-full">
                     <TrackLink href={PRO_PLAN.ctaHref} event="checkout_clicked" params={{ plan: "pro" }}>
                       {PRO_PLAN.cta}
+                    </TrackLink>
+                  </Button>
+                </CardContent>
+              </Card>
+              {/* Pro Yearly */}
+              <Card className="relative border-2 border-primary shadow-lg">
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-xl">{PRO_YEARLY_PLAN.name}</CardTitle>
+                    <span className="rounded-full bg-primary px-2.5 py-0.5 text-xs font-semibold text-primary-foreground">
+                      Save 20%
+                    </span>
+                  </div>
+                  <CardDescription className="mt-2">
+                    {PRO_YEARLY_PLAN.description}
+                  </CardDescription>
+                  <div className="mt-4 space-y-1">
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-4xl font-bold tracking-tight">
+                        {PRO_YEARLY_PLAN.price}
+                      </span>
+                      <span className="text-sm text-muted-foreground">
+                        {PRO_YEARLY_PLAN.priceNote}
+                      </span>
+                    </div>
+                    <p className="text-sm text-primary">
+                      {PRO_YEARLY_PLAN.yearlyTotal} · {PRO_YEARLY_PLAN.savings}
+                    </p>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {PRO_YEARLY_PLAN.features.map((f) => (
+                      <li key={f} className="flex items-start gap-3 text-sm">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild size="lg" className="mt-8 w-full">
+                    <TrackLink href={PRO_YEARLY_PLAN.ctaHref} event="checkout_clicked" params={{ plan: "pro_yearly" }}>
+                      {PRO_YEARLY_PLAN.cta}
                     </TrackLink>
                   </Button>
                 </CardContent>
