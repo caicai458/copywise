@@ -1,10 +1,9 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { track } from "@vercel/analytics/react";
 import { Loader2, Sparkles, Copy, Check, RefreshCw, AlertTriangle, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -17,16 +16,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CONTENT_TYPE_LABELS, type ContentType } from "@/lib/types";
-
 const contentTypes = Object.entries(CONTENT_TYPE_LABELS) as [ContentType, string][];
 const TRIAL_LIMIT = 3;
-
 interface GenerateResponse {
   content: string;
   tokens_used: number;
   model: string;
 }
-
 export default function TryPage() {
   const [contentType, setContentType] = useState<ContentType>("cold_email");
   const [prompt, setPrompt] = useState("");
@@ -34,7 +30,6 @@ export default function TryPage() {
   const [result, setResult] = useState<GenerateResponse | null>(null);
   const [copied, setCopied] = useState(false);
   const [trialUsed, setTrialUsed] = useState(0);
-
   // 从 localStorage 读取试用次数
   useEffect(() => {
     const used = localStorage.getItem("trial_generations");
@@ -42,20 +37,16 @@ export default function TryPage() {
       setTrialUsed(parseInt(used));
     }
   }, []);
-
   const trialRemaining = TRIAL_LIMIT - trialUsed;
-
   async function handleGenerate(isRegenerate = false) {
     if (!prompt.trim()) {
       toast.error("Please describe what copy you need to generate.");
       return;
     }
-
     if (trialRemaining <= 0 && !isRegenerate) {
       toast.error("Trial limit reached. Please sign up to continue.");
       return;
     }
-
     setLoading(true);
     try {
       const res = await fetch("/api/generate-public", {
@@ -63,14 +54,11 @@ export default function TryPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: prompt.trim(), content_type: contentType }),
       });
-
       const data = await res.json();
-
       if (!res.ok) {
         toast.error(data.error || "Failed to generate copy. Please try again.");
         return;
       }
-
       setResult(data as GenerateResponse);
       setCopied(false);
       
@@ -79,6 +67,7 @@ export default function TryPage() {
         setTrialUsed(newCount);
         localStorage.setItem("trial_generations", newCount.toString());
         toast.success("Copy generated!");
+        track("trial_generated", { content_type: contentType });
       }
     } catch {
       toast.error("Network error. Please try again.");
@@ -86,7 +75,6 @@ export default function TryPage() {
       setLoading(false);
     }
   }
-
   async function handleCopy() {
     if (!result) return;
     try {
@@ -98,7 +86,6 @@ export default function TryPage() {
       toast.error("Failed to copy.");
     }
   }
-
   // 如果试用次数用完了，显示注册提示
   if (trialRemaining <= 0 && !loading) {
     return (
@@ -122,7 +109,7 @@ export default function TryPage() {
                 <li>• Refer friends to earn more free generations</li>
               </ul>
             </div>
-            <Link href="/signup">
+            <Link href="/signup" onClick={() => track("signup_click", { source: "trial_complete" })}>
               <Button size="lg" className="w-full">
                 Sign Up Free
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -139,7 +126,6 @@ export default function TryPage() {
       </div>
     );
   }
-
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="mb-8 text-center">
@@ -156,7 +142,6 @@ export default function TryPage() {
           generations left.
         </p>
       </div>
-
       {/* Generator form */}
       <Card className="mb-6">
         <CardHeader>
@@ -212,29 +197,9 @@ export default function TryPage() {
           </Button>
         </CardContent>
       </Card>
-
       {/* Result area */}
       {result && (
         <Card>
-          {/* Signup banner - always visible on result, not just after 3 uses */}
-          <div className="mx-6 mt-6 rounded-lg border border-primary/20 bg-primary/5 p-4">
-            <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-              <div>
-                <p className="text-sm font-semibold">
-                  Free account: 5 generations every day
-                </p>
-                <p className="mt-0.5 text-xs text-muted-foreground">
-                  Save favorites, track history, unlock all formats. No credit card.
-                </p>
-              </div>
-              <Link href="/signup">
-                <Button size="sm">
-                  Sign Up Free
-                  <ArrowRight className="ml-1 h-3 w-3" />
-                </Button>
-              </Link>
-            </div>
-          </div>
           <CardHeader className="flex flex-row items-start justify-between space-y-0">
             <div>
               <CardTitle className="flex items-center gap-2">
@@ -275,7 +240,7 @@ export default function TryPage() {
                 <p className="text-sm font-medium">
                   Love it? Sign up to keep generating for free every day!
                 </p>
-                <Link href="/signup">
+                <Link href="/signup" onClick={() => track("signup_click", { source: "result_card" })}>
                   <Button size="sm">
                     Sign Up Free
                     <ArrowRight className="ml-1 h-3 w-3" />
