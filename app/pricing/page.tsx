@@ -11,21 +11,19 @@ import {
 } from "@/components/ui/card";
 import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
+import { TrackLink } from "@/components/marketing/track-link";
 import { FREE_PLAN, PRO_PLAN } from "@/components/marketing/pricing-cards";
 import PayCN from "./PayCN";
-
 export const metadata: Metadata = {
   title: "Pricing",
   description:
     "Simple, transparent pricing for Copywise. Start free with 5 generations daily, or upgrade to Pro for unlimited AI copywriting.",
 };
-
 interface ComparisonRow {
   feature: string;
   free: string | boolean;
   pro: string | boolean;
 }
-
 const COMPARISON: ComparisonRow[] = [
   { feature: "Daily AI generations", free: "5 per day", pro: "Unlimited" },
   { feature: "Cold email generator", free: true, pro: true },
@@ -39,7 +37,6 @@ const COMPARISON: ComparisonRow[] = [
   { feature: "Support", free: "Community", pro: "Priority" },
   { feature: "GDPR-compliant data handling", free: true, pro: true },
 ];
-
 function Cell({ value }: { value: string | boolean }) {
   if (value === true) {
     return (
@@ -57,12 +54,10 @@ function Cell({ value }: { value: string | boolean }) {
   }
   return <span className="text-sm">{value}</span>;
 }
-
 export default function PricingPage() {
   return (
     <div className="flex min-h-screen flex-1 flex-col">
       <Navbar />
-
       <main className="flex-1">
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -75,7 +70,6 @@ export default function PricingPage() {
                 you need unlimited generations.
               </p>
             </div>
-
             {/* Plan cards */}
             <div className="mx-auto mt-16 grid max-w-4xl gap-8 md:grid-cols-2">
               {/* Free */}
@@ -104,11 +98,12 @@ export default function PricingPage() {
                     ))}
                   </ul>
                   <Button asChild variant="outline" size="lg" className="mt-8 w-full">
-                    <Link href={FREE_PLAN.ctaHref}>{FREE_PLAN.cta}</Link>
+                    <TrackLink href={FREE_PLAN.ctaHref} event="checkout_clicked" params={{ plan: "free" }}>
+                      {FREE_PLAN.cta}
+                    </TrackLink>
                   </Button>
                 </CardContent>
               </Card>
-
               {/* Pro */}
               <Card className="relative border-2 border-primary shadow-lg">
                 <CardHeader>
@@ -146,33 +141,17 @@ export default function PricingPage() {
                     ))}
                   </ul>
                   <Button asChild size="lg" className="mt-8 w-full">
-                    <Link href={PRO_PLAN.ctaHref}>{PRO_PLAN.cta}</Link>
+                    <TrackLink href={PRO_PLAN.ctaHref} event="checkout_clicked" params={{ plan: "pro" }}>
+                      {PRO_PLAN.cta}
+                    </TrackLink>
                   </Button>
                 </CardContent>
               </Card>
             </div>
-
-            {/* Trust bar - risk-reversal for checkout */}
-            <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center justify-center gap-2.5 text-sm text-muted-foreground sm:flex-row sm:gap-8">
-              <span className="flex items-center gap-2">
-                <Check className="h-4 w-4 shrink-0 text-primary" />
-                30-day free trial, no credit card
-              </span>
-              <span className="flex items-center gap-2">
-                <Check className="h-4 w-4 shrink-0 text-primary" />
-                Cancel anytime
-              </span>
-              <span className="flex items-center gap-2">
-                <Check className="h-4 w-4 shrink-0 text-primary" />
-                Email support, replies within 24h
-              </span>
-            </div>
-
             {/* CN RMB payment */}
             <div className="mx-auto max-w-md">
               <PayCN />
             </div>
-
             {/* Comparison table */}
             <div className="mx-auto mt-20 max-w-4xl">
               <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl">
@@ -211,7 +190,6 @@ export default function PricingPage() {
                 </table>
               </div>
             </div>
-
             {/* Competitor comparison */}
             <div className="mx-auto mt-20 max-w-5xl">
               <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl">
@@ -277,7 +255,6 @@ export default function PricingPage() {
                 </p>
               </div>
             </div>
-
             {/* FAQ-ish bottom note */}
             <div className="mx-auto mt-16 max-w-2xl text-center">
               <h2 className="text-2xl font-bold tracking-tight">
@@ -288,16 +265,15 @@ export default function PricingPage() {
                 required. Upgrade inside the dashboard whenever you're ready.
               </p>
               <Button size="lg" asChild className="mt-6">
-                <Link href="/signup">
+                <TrackLink href="/signup" event="checkout_clicked" params={{ plan: "free_hero" }}>
                   Start Free
                   <ArrowRight className="h-4 w-4" />
-                </Link>
+                </TrackLink>
               </Button>
             </div>
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
