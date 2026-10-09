@@ -14,6 +14,7 @@ import { Footer } from "@/components/marketing/footer";
 import { TrackLink } from "@/components/marketing/track-link";
 import { FREE_PLAN, PRO_PLAN, PRO_YEARLY_PLAN } from "@/components/marketing/pricing-cards";
 import PayCN from "./PayCN";
+import RegionPricing from "./RegionPricing";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
@@ -71,7 +72,9 @@ export default function PricingPage() {
               </p>
             </div>
             {/* Plan cards */}
-            <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <RegionPricing
+    us={
+      <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
               {/* Free */}
               <Card>
                 <CardHeader>
@@ -190,10 +193,9 @@ export default function PricingPage() {
                 </CardContent>
               </Card>
             </div>
-            {/* CN RMB payment */}
-            <div className="mx-auto max-w-md">
-              <PayCN />
-            </div>
+    }
+    cn={<PayCN />}
+  />
             {/* Comparison table */}
             <div className="mx-auto mt-20 max-w-4xl">
               <h2 className="text-center text-2xl font-bold tracking-tight sm:text-3xl">
