@@ -126,7 +126,7 @@ export function PricingCards({ plan }: { plan: SubscriptionPlan }) {
         </CardHeader>
         <CardContent>
           <div className="mb-4">
-            <span className="text-4xl font-bold">$15</span>
+            <span className="text-4xl font-bold">$23.20</span>
             <span className="text-muted-foreground">/mo</span>
             <span className="ml-2 text-sm text-muted-foreground">
               (billed $180/year)
