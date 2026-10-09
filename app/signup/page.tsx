@@ -64,7 +64,7 @@ function SignupForm() {
     } else {
       toast.success("Account created. Welcome to Copywise!");
       track("signup_completed", { plan: searchParams.get("plan") || "free" });
-      router.push(searchParams.get("plan") === "pro" ? "/dashboard/billing" : "/dashboard");
+      router.push(searchParams.get("plan") === "pro" || searchParams.get("plan") === "pro_yearly" ? "/dashboard/billing" : "/dashboard");
     }
   }
   if (needsVerification) {
