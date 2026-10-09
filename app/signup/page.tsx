@@ -138,12 +138,12 @@ aria-label={showPassword ? "Hide password" : "Show password"}
 <>
 <Loader2 className="animate-spin" />
 Creating account...
-< />
+</>
 ) : (
 <>
 <UserPlus />
 Create account
-< />
+</>
 )}
 </Button>
 <p className="text-center text-sm text-muted-foreground">
