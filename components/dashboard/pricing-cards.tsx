@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import { Loader2, Sparkles, Crown } from "lucide-react";
@@ -115,7 +115,7 @@ export function PricingCards({ plan }: { plan: SubscriptionPlan }) {
 
       <Card className="relative border-primary">
         <div className="absolute right-4 top-4 rounded-full bg-primary px-2.5 py-0.5 text-xs font-semibold text-primary-foreground">
-          Save 48%
+          Save 20%
         </div>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
@@ -128,13 +128,11 @@ export function PricingCards({ plan }: { plan: SubscriptionPlan }) {
           <div className="mb-4">
             <span className="text-4xl font-bold">$23.20</span>
             <span className="text-muted-foreground">/mo</span>
-            <span className="ml-2 text-sm text-muted-foreground">
-              (billed $180/year)
-            </span>
+            
           </div>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>• Everything in Monthly</li>
-            <li>• Save $168 / year vs monthly</li>
+            <li>• Save $69.60 / year vs monthly</li>
             <li>• Priority support</li>
           </ul>
         </CardContent>
