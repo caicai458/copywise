@@ -13,6 +13,7 @@ interface PricingCardProps {
   features: string[];
   cta: string;
   ctaHref: string;
+  payHref?: string;
   highlighted?: boolean;
   badge?: string;
 }
@@ -25,6 +26,7 @@ function PricingCard({
   features,
   cta,
   ctaHref,
+  payHref,
   highlighted = false,
   badge,
 }: PricingCardProps) {
@@ -67,6 +69,18 @@ function PricingCard({
         >
           <Link href={ctaHref}>{cta}</Link>
         </Button>
+        {payHref && (
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="mt-3 w-full"
+          >
+            <Link href={payHref} target="_blank" rel="noopener noreferrer">
+              Pay Now with Card
+            </Link>
+          </Button>
+        )}
       </CardContent>
     </Card>
   );
@@ -102,6 +116,7 @@ export const PRO_PLAN = {
   ],
   cta: "Upgrade to Pro",
   ctaHref: "/signup?plan=pro",
+  payHref: "https://www.creem.io/payment/prod_1H3LCIL8pCxwbRvYa1oFkJ",
 };
 
 export const PRO_YEARLY_PLAN = {
@@ -121,13 +136,15 @@ export const PRO_YEARLY_PLAN = {
   ],
   cta: "Upgrade to Pro - Yearly",
   ctaHref: "/signup?plan=pro_yearly",
+  payHref: "https://www.creem.io/payment/prod_52Xu3CcZgVqCSOPrxPqcAW",
 };
 
 export function PricingCards() {
   return (
-    <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
+    <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
       <PricingCard {...FREE_PLAN} />
       <PricingCard {...PRO_PLAN} highlighted badge="Most Popular" />
+      <PricingCard {...PRO_YEARLY_PLAN} highlighted badge="Save 20%" />
     </div>
   );
 }
