@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Check, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -54,7 +55,23 @@ function Cell({ value }: { value: string | boolean }) {
   }
   return <span className="text-sm">{value}</span>;
 }
-export default function PricingPage() {
+export default async function PricingPage({
+  searchParams,
+}: {
+  searchParams: { region?: string };
+}) {
+  const sp = await searchParams;
+  const region = sp?.region;
+  let showCN: boolean;
+  if (region === "us") {
+    showCN = false;
+  } else if (region === "cn") {
+    showCN = true;
+  } else {
+    const h = await headers();
+    const country = (h.get("x-vercel-ip-country") || "").toUpperCase();
+    showCN = country === "CN";
+  }
   return (
     <div className="flex min-h-screen flex-1 flex-col">
       <Navbar />
@@ -71,7 +88,7 @@ export default function PricingPage() {
               </p>
             </div>
             {/* Plan cards */}
-            <RegionPricing
+            <RegionPricing forceCN={showCN}
     us={
       <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
               {/* Free */}
