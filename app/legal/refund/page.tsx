@@ -31,7 +31,7 @@ export default function RefundPolicyPage() {
       <ul>
         <li>
           Email:{" "}
-          <a href="mailto:billing@getcopywise.com">billing@getcopywise.com</a>
+          <a href="mailto:clxwjccq@outlook.com">clxwjccq@outlook.com</a>
         </li>
         <li>
           Include the email address used to create your Copywise account and the
@@ -82,7 +82,7 @@ export default function RefundPolicyPage() {
       <h2>6. Contact</h2>
       <p>
         For any billing or refund questions, reach us at{" "}
-        <a href="mailto:billing@getcopywise.com">billing@getcopywise.com</a>.
+        <a href="mailto:clxwjccq@outlook.com">clxwjccq@outlook.com</a>.
       </p>
     </LegalLayout>
   );
