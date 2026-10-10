@@ -361,7 +361,7 @@ export default function Home() {
                   Start Writing Cold Emails That Get Replies
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-                  Join thousands of sales reps and creators who use ColdCrow to
+                  Join sales reps and creators who use ColdCrow to
                   turn product ideas into copy that converts.
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
