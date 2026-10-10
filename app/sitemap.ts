@@ -37,6 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cold-email-psychology",
     "cold-email-volume-limits-2026",
     "cold-email-subject-lines-2026",
+    "how-many-cold-email-follow-ups",
+    "ai-cold-email-generators-vs-handwritten",
   ];
 
   return [
