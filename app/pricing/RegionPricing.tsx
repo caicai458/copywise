@@ -13,14 +13,14 @@ export default function RegionPricing({
 }) {
   const [isCN, setIsCN] = useState(false);
   useEffect(() => {
-    if (forceCN !== undefined) {
-      setIsCN(forceCN);
-      return;
-    }
     const params = new URLSearchParams(window.location.search);
     const region = params.get("region");
     if (region === "us" || region === "cn") {
       setIsCN(region === "cn");
+      return;
+    }
+    if (forceCN !== undefined) {
+      setIsCN(forceCN);
       return;
     }
     const lang = (navigator.language || "").toLowerCase();
