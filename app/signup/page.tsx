@@ -2,7 +2,6 @@
 import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { track } from "@vercel/analytics/react";
 import { Loader2, MailCheck, UserPlus, Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -22,9 +21,7 @@ function SignupForm() {
   const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [needsVerification, setNeedsVerification] = useState(false);
@@ -42,12 +39,7 @@ function SignupForm() {
       setError("Password must be at least 6 characters.");
       return;
     }
-    if (password !== confirmPassword) {
-      setError("Passwords do not match.");
-      return;
-    }
     setLoading(true);
-    track("signup_started");
     const refCode = searchParams.get("ref");
     const result = await signUp(email, password, refCode);
     if (result?.error) {
@@ -58,13 +50,15 @@ function SignupForm() {
     }
     if (result.needsEmailVerification) {
       setNeedsVerification(true);
-      track("signup_completed", { plan: searchParams.get("plan") || "free" });
       toast.success("Account created. Please check your email to verify.");
       setLoading(false);
     } else {
       toast.success("Account created. Welcome to Copywise!");
-      track("signup_completed", { plan: searchParams.get("plan") || "free" });
-      router.push(searchParams.get("plan") === "pro" || searchParams.get("plan") === "pro_yearly" ? "/dashboard/billing" : "/dashboard");
+      router.push(
+        searchParams.get("plan") === "pro" || searchParams.get("plan") === "pro_yearly"
+          ? "/dashboard/billing"
+          : "/dashboard"
+      );
     }
   }
   if (needsVerification) {
@@ -100,8 +94,8 @@ function SignupForm() {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
           <CardDescription>
-            Start generating high-converting copy in seconds. Free forever plan
-            included.
+            Start generating high-converting copy in seconds. No credit card
+            required.
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
@@ -137,28 +131,6 @@ function SignupForm() {
                   aria-label={showPassword ? "Hide password" : "Show password"}
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                </button>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="confirmPassword">Confirm Password</Label>
-              <div className="relative">
-                <Input
-                  id="confirmPassword"
-                  type={showConfirmPassword ? "text" : "password"}
-                  required
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  autoComplete="new-password"
-                  className="pr-10"
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
-                  aria-label={showConfirmPassword ? "Hide password" : "Show password"}
-                >
-                  {showConfirmPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
               </div>
             </div>
