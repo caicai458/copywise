@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/card";
 import { CONTENT_TYPE_LABELS, type ContentType, type UsageInfo } from "@/lib/types";
 import { ShareButtons } from "@/components/marketing/share-buttons";
+import { track } from "@vercel/analytics/react";
 
 const contentTypes = Object.entries(CONTENT_TYPE_LABELS) as [ContentType, string][];
 
@@ -63,6 +64,7 @@ export default function DashboardPage() {
         if (data && !cancelled) setUsage(data);
       })
       .catch(() => {});
+    track("dashboard_view");
     return () => {
       cancelled = true;
     };
