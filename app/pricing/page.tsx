@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Check, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -149,9 +148,9 @@ export default function PricingPage() {
                     </TrackLink>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="mt-3 w-full">
-                    <Link href="https://www.creem.io/payment/prod_6JYVploDHbwYUi2WNbQZb3" target="_blank" rel="noopener noreferrer">
+                    <TrackLink href="https://www.creem.io/payment/prod_6JYVploDHbwYUi2WNbQZb3" target="_blank" rel="noopener noreferrer" event="checkout_clicked" params={{ plan: "pro_card" }}>
                       Pay Now with Card
-                    </Link>
+                    </TrackLink>
                   </Button>
                 </CardContent>
               </Card>
@@ -196,9 +195,9 @@ export default function PricingPage() {
                     </TrackLink>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="mt-3 w-full">
-                    <Link href="https://www.creem.io/payment/prod_1cU7DJSaCxv6gDlkK4fKhh" target="_blank" rel="noopener noreferrer">
+                    <TrackLink href="https://www.creem.io/payment/prod_1cU7DJSaCxv6gDlkK4fKhh" target="_blank" rel="noopener noreferrer" event="checkout_clicked" params={{ plan: "pro_yearly_card" }}>
                       Pay Now with Card
-                    </Link>
+                    </TrackLink>
                   </Button>
                 </CardContent>
               </Card>
