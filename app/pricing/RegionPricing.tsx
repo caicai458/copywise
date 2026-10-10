@@ -17,6 +17,12 @@ export default function RegionPricing({
       setIsCN(forceCN);
       return;
     }
+    const params = new URLSearchParams(window.location.search);
+    const region = params.get("region");
+    if (region === "us" || region === "cn") {
+      setIsCN(region === "cn");
+      return;
+    }
     const lang = (navigator.language || "").toLowerCase();
     setIsCN(lang.startsWith("zh"));
   }, [forceCN]);
