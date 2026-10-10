@@ -5,6 +5,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-for-plg-saas-2026",
+    title: "Cold Email for PLG SaaS: When Product-Led Companies Should Send Outbound (2026)",
+    description:
+      "Product-led teams assume outbound is for sales-led companies - until signups go quiet. The three situations where PLG should send cold email, the three rules that keep it on-brand, and three templates that route replies to activation.",
+    date: "Oct 10, 2026",
+    readTime: "7 min read",
+  },  {
     slug: "anatomy-of-perfect-cold-email",
     title: "The Anatomy of a Perfect Cold Email in 2026",
     description:
