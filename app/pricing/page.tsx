@@ -149,7 +149,7 @@ export default function PricingPage() {
                     </TrackLink>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="mt-3 w-full">
-                    <Link href="https://www.creem.io/payment/prod_1H3LCIL8pCxwbRvYa1oFkJ" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.creem.io/payment/prod_6JYVploDHbwYUi2WNbQZb3" target="_blank" rel="noopener noreferrer">
                       Pay Now with Card
                     </Link>
                   </Button>
@@ -196,7 +196,7 @@ export default function PricingPage() {
                     </TrackLink>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="mt-3 w-full">
-                    <Link href="https://www.creem.io/payment/prod_52Xu3CcZgVqCSOPrxPqcAW" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.creem.io/payment/prod_1cU7DJSaCxv6gDlkK4fKhh" target="_blank" rel="noopener noreferrer">
                       Pay Now with Card
                     </Link>
                   </Button>
