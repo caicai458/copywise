@@ -55,23 +55,10 @@ function Cell({ value }: { value: string | boolean }) {
   }
   return <span className="text-sm">{value}</span>;
 }
-export default async function PricingPage({
-  searchParams,
-}: {
-  searchParams: { region?: string };
-}) {
-  const sp = await searchParams;
-  const region = sp?.region;
-  let showCN: boolean;
-  if (region === "us") {
-    showCN = false;
-  } else if (region === "cn") {
-    showCN = true;
-  } else {
-    const h = await headers();
-    const country = (h.get("x-vercel-ip-country") || "").toUpperCase();
-    showCN = country === "CN";
-  }
+export default async function PricingPage() {
+  const h = await headers();
+  const country = (h.get("x-vercel-ip-country") || "").toUpperCase();
+  const showCN = country === "CN";
   return (
     <div className="flex min-h-screen flex-1 flex-col">
       <Navbar />
