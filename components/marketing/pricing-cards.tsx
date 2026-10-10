@@ -116,7 +116,7 @@ export const PRO_PLAN = {
   ],
   cta: "Upgrade to Pro",
   ctaHref: "/signup?plan=pro",
-  payHref: "https://www.creem.io/payment/prod_1H3LCIL8pCxwbRvYa1oFkJ",
+  payHref: "https://www.creem.io/payment/prod_6JYVploDHbwYUi2WNbQZb3",
 };
 
 export const PRO_YEARLY_PLAN = {
@@ -136,7 +136,7 @@ export const PRO_YEARLY_PLAN = {
   ],
   cta: "Upgrade to Pro - Yearly",
   ctaHref: "/signup?plan=pro_yearly",
-  payHref: "https://www.creem.io/payment/prod_52Xu3CcZgVqCSOPrxPqcAW",
+  payHref: "https://www.creem.io/payment/prod_1cU7DJSaCxv6gDlkK4fKhh",
 };
 
 export function PricingCards() {
