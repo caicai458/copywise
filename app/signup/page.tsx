@@ -16,6 +16,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { signUp } from "@/lib/auth-actions";
+import { track } from "@vercel/analytics/react";
 function SignupForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -31,6 +32,7 @@ function SignupForm() {
     if (ref) {
       document.cookie = `ref_code=${ref}; path=/; max-age=86400`;
     }
+    track("signup_view", { plan: searchParams.get("plan") || "free" });
   }, [searchParams]);
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -48,6 +50,10 @@ function SignupForm() {
       setLoading(false);
       return;
     }
+    track("signup_complete", {
+      plan: searchParams.get("plan") || "free",
+      method: result.needsEmailVerification ? "email_verify" : "direct",
+    });
     if (result.needsEmailVerification) {
       setNeedsVerification(true);
       toast.success("Account created. Please check your email to verify.");
