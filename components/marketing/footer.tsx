@@ -87,6 +87,19 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             &copy; 2026 ColdCrow. All rights reserved.
           </p>
+          <div className="mt-4">
+            <a
+              href="https://turbo0.com/item/coldcrow-ai-cold-email-writer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.turbo0.com/badge-listed-light.svg"
+                alt="Listed on Turbo0"
+                style={{ height: 54, width: "auto" }}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
