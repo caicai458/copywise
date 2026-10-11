@@ -99,6 +99,18 @@ export function Footer() {
                 style={{ height: 54, width: "auto" }}
               />
             </a>
+              <a
+                href="https://dang.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://assets.dang.ai/badges/dang-verified-dark.png"
+                  alt="Verified on DANG!"
+                  style={{ height: 54, width: "auto" }}
+                />
+              </a>
+
           </div>
         </div>
       </div>
