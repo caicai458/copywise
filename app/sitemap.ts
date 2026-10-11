@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cold-email-subject-lines-2026",
     "how-many-cold-email-follow-ups",
     "ai-cold-email-generators-vs-handwritten",
+    "cold-email-for-plg-saas-2026",
   ];
 
   return [
