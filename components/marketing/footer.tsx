@@ -110,7 +110,17 @@ export function Footer() {
                   style={{ height: 54, width: "auto" }}
                 />
               </a>
-
+              <a
+                href="https://submitaitools.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://submitaitools.org/static_submitaitools/images/submitaitools.png"
+                  alt="Submit AI Tools"
+                  style={{ borderRadius: 10, width: 200, height: 60 }}
+                />
+              </a>
           </div>
         </div>
       </div>
