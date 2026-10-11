@@ -14,7 +14,7 @@ const LEGAL_LINKS = [
 ];
 
 const COMPANY_LINKS = [
-  { label: "Contact", href: "mailto:clxwjccq@outlook.com" },
+  { label: "Contact", href: "mailto:billing@getcopywise.com" },
 ];
 
 export function Footer() {
