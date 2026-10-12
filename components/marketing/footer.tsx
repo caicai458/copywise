@@ -11,8 +11,7 @@ const LEGAL_LINKS = [
   { label: "Refund Policy", href: "/legal/refund" },
 ];
 const COMPANY_LINKS = [
-  { label: "About", href: "/#" },
-  { label: "Contact", href: "/#" },
+  { label: "Contact", href: "mailto:billing@getcopywise.com" },
 ];
 export function Footer() {
   return (
