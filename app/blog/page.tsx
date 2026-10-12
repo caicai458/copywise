@@ -5,67 +5,28 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
-    slug: "cold-email-for-plg-saas-2026",
-    title: "Cold Email for PLG SaaS: When Product-Led Companies Should Send Outbound (2026)",
+    slug: "cold-email-stack-2026",
+    title: "The Cold Email Stack in 2026: The Only Tools You Need",
     description:
-      "Product-led teams assume outbound is for sales-led companies - until signups go quiet. The three situations where PLG should send cold email, the three rules that keep it on-brand, and three templates that route replies to activation.",
-    date: "Oct 10, 2026",
-    readTime: "7 min read",
-  },  {
-    slug: "anatomy-of-perfect-cold-email",
-    title: "The Anatomy of a Perfect Cold Email in 2026",
-    description:
-      "Strip every 'perfect' cold email down to its skeleton and you get four sentences: one researched detail, one value line, one low-pressure ask, one graceful exit. Everything else lowers your reply rate.",
-    date: "Oct 9, 2026",
-    readTime: "5 min read",
-  },
-  {
-    slug: "cold-email-investors-2026",
-    title: "How to Cold Email Investors in 2026: The Playbook That Gets Replies",
-    description:
-      "Investors get 300 cold emails a week. Yours gets 12 seconds. The thesis match, the signal, and the one small ask that actually books a call.",
-    date: "Oct 9, 2026",
+      "A complete cold email stack for 2026: domain setup, address verification, sending infrastructure, AI writing, and tracking. Here is the minimal toolset that actually moves reply rates.",
+    date: "Oct 12, 2026",
     readTime: "6 min read",
   },
   {
-    slug: "cold-email-etiquette-2026",
-    title: "Cold Email Etiquette in 2026: The Do's and Don'ts That Decide Replies",
+    slug: "cold-email-for-ecommerce-brands",
+    title: "Cold Email for Ecommerce Brands: The 2026 Wholesale & Partnership Playbook",
     description:
-      "Recipients delete cold emails for tone reasons as often as relevance reasons. The 2026 etiquette rules that keep your emails out of the trash.",
-    date: "Oct 9, 2026",
+      "Most ecommerce founders treat cold email as a customer channel. Here is the playbook for using it to win wholesale accounts, B2B partnerships, and distribution deals.",
+    date: "Oct 12, 2026",
     readTime: "6 min read",
   },
   {
-    slug: "cold-email-to-trial-conversion",
-    title: "From Cold Email to Trial: How to Turn Replies into Signups in 2026",
+    slug: "cold-email-compliance-2026",
+    title: "CAN-SPAM & GDPR for Cold Email in 2026: What's Legal, What's Not",
     description:
-      "A 3% reply rate means nothing if nobody clicks. Here is the reply-to-trial funnel: the follow-up that books the click, the landing page that converts, and the trial that closes.",
-    date: "Oct 9, 2026",
-    readTime: "7 min read",
-  },
-  {
-    slug: "personalization-vs-automation",
-    title: "Cold Email Personalization vs. Automation: Where to Draw the Line in 2026",
-    description:
-      "Personalization at scale is a lie - until you know which 20% of touches actually need a human. The 2026 line between automated volume and researched relevance.",
-    date: "Oct 9, 2026",
+      "Is cold email even legal? Here is what CAN-SPAM and GDPR actually require for B2B cold email in 2026 — and the compliance checklist that keeps you safe.",
+    date: "Oct 12, 2026",
     readTime: "6 min read",
-  },
-  {
-    slug: "bought-lists-are-dead-2026",
-    title: "Bought Lists Are Dead: How to Build a Cold Email List That Replies in 2026",
-    description:
-      "A 'verified' list of 2,000 emails got our client 0.6% replies and 12% bounces. Here is how to build a prospect list that actually replies in 2026.",
-    date: "Oct 8, 2026",
-    readTime: "8 min read",
-  },
-  {
-    slug: "signal-based-outreach",
-    title: "Signal-Based Outreach: The 2026 Playbook for Emailing People in a Buying Window",
-    description:
-      "A signal is a public event that tells you a company is about to need what you sell. Signal-based campaigns clear 15-25% reply rates while volume blasts sit at 0.5-3%.",
-    date: "Oct 8, 2026",
-    readTime: "7 min read",
   },
   {
     slug: "cold-email-reply-rates-2026",
