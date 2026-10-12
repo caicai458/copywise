@@ -1,22 +1,19 @@
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
-
 const PRODUCT_LINKS = [
   { label: "Features", href: "/#features" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/#faq" },
 ];
-
 const LEGAL_LINKS = [
   { label: "Privacy Policy", href: "/legal/privacy" },
   { label: "Terms of Service", href: "/legal/terms" },
   { label: "Refund Policy", href: "/legal/refund" },
 ];
-
 const COMPANY_LINKS = [
-  { label: "Contact", href: "mailto:billing@getcopywise.com" },
+  { label: "About", href: "/#" },
+  { label: "Contact", href: "/#" },
 ];
-
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background">
@@ -88,39 +85,9 @@ export function Footer() {
             &copy; 2026 ColdCrow. All rights reserved.
           </p>
           <div className="mt-4">
-            <a
-              href="https://turbo0.com/item/coldcrow-ai-cold-email-writer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.turbo0.com/badge-listed-light.svg"
-                alt="Listed on Turbo0"
-                style={{ height: 54, width: "auto" }}
-              />
+            <a target="_blank" href="https://goodaitools.com/ai/getcopywise" rel="noopener">
+              <img src="https://goodaitools.com/assets/images/badge.png" alt="Good AI Tools" height="54" loading="lazy" />
             </a>
-              <a
-                href="https://dang.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://assets.dang.ai/badges/dang-verified-dark.png"
-                  alt="Verified on DANG!"
-                  style={{ height: 54, width: "auto" }}
-                />
-              </a>
-              <a
-                href="https://submitaitools.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://submitaitools.org/static_submitaitools/images/submitaitools.png"
-                  alt="Submit AI Tools"
-                  style={{ borderRadius: 10, width: 200, height: 60 }}
-                />
-              </a>
           </div>
         </div>
       </div>
