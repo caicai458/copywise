@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-
 const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://copywise.vercel.app";
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-
   const blogs = [
+    "cold-email-stack-2026",
+    "cold-email-for-ecommerce-brands",
+    "cold-email-compliance-2026",
     "how-to-find-b2b-emails",
     "email-domain-warmup-guide",
     "50-personalization-ideas",
@@ -41,7 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ai-cold-email-generators-vs-handwritten",
     "cold-email-for-plg-saas-2026",
   ];
-
   return [
     {
       url: `${siteUrl}/`,
