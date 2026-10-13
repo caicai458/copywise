@@ -93,7 +93,10 @@ export function Footer() {
             <a target="_blank" href="https://saasaitools.com/portal/" rel="noopener" className="ml-4 inline-block">
               <img src="https://saasaitools.com/wp-content/uploads/uploads/branding/saasaitools-badge-light.svg" alt="Featured on SaaS AI Tools" height="54" loading="lazy" />
             </a>
-            <a target="_blank" href="https://dang.ai" rel="noopener" className="ml-4 inline-block text-xs text-muted-foreground underline">
+            <a target="_blank" href="https://appalist.com/ai/getcopywise" rel="noopener" className="ml-4 inline-block">
+              <img src="https://appalist.com/assets/images/badge.png" alt="Appa List" height="54" loading="lazy" />
+            </a>
+<a target="_blank" href="https://dang.ai" rel="noopener" className="ml-4 inline-block text-xs text-muted-foreground underline">
               Find more AI tools on Dang.ai
             </a>
           </div>
