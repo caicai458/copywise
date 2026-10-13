@@ -90,6 +90,9 @@ export function Footer() {
             <a target="_blank" href="https://toolfame.com/item/coldcrow" rel="noopener" className="ml-4 inline-block">
               <img src="https://toolfame.com/badge-light.svg" alt="Featured on ToolFame" height="54" loading="lazy" />
             </a>
+            <a target="_blank" href="https://saasaitools.com/portal/" rel="noopener" className="ml-4 inline-block">
+              <img src="https://saasaitools.com/wp-content/uploads/uploads/branding/saasaitools-badge-light.svg" alt="Featured on SaaS AI Tools" height="54" loading="lazy" />
+            </a>
             <a target="_blank" href="https://dang.ai" rel="noopener" className="ml-4 inline-block text-xs text-muted-foreground underline">
               Find more AI tools on Dang.ai
             </a>
