@@ -87,6 +87,9 @@ export function Footer() {
             <a target="_blank" href="https://goodaitools.com/ai/getcopywise" rel="noopener">
               <img src="https://goodaitools.com/assets/images/badge.png" alt="Good AI Tools" height="54" loading="lazy" />
             </a>
+            <a target="_blank" href="https://toolfame.com/item/coldcrow" rel="noopener" className="ml-4 inline-block">
+              <img src="https://toolfame.com/badge-light.svg" alt="Featured on ToolFame" height="54" loading="lazy" />
+            </a>
             <a target="_blank" href="https://dang.ai" rel="noopener" className="ml-4 inline-block text-xs text-muted-foreground underline">
               Find more AI tools on Dang.ai
             </a>
