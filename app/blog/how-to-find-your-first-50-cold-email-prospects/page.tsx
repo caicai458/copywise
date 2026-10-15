@@ -131,7 +131,7 @@ export default function BlogPost() {
               [ ] Decision-maker identified per company
             </li>
             <li>
-              [ ] Emails verified, bounce risk <2%
+              [ ] Emails verified, bounce risk &lt;2%
             </li>
             <li>
               [ ] Score sorted, top 20 queued first
