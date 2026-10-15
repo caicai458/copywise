@@ -5,6 +5,37 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "how-we-got-our-first-10-b2b-saas-users",
+    title: "How We Got Our First 10 B2B SaaS Users (No Ads, No Budget)",
+    description:
+      "The honest, unglamorous playbook we used to land our first 10 B2B SaaS users - no ads, no budget, just cold email, LinkedIn and consistent outreach.",
+    date: "Oct 15, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-vs-linkedin-30-minutes",
+    title: "Cold Email vs LinkedIn Outreach: Where Should a B2B Founder Spend 30 Minutes a Day?",
+    description:
+      "If you have 30 minutes a day and zero customers: spend 20 on cold email, 10 on LinkedIn comments. Here is the split, and why it works.",
+    date: "Oct 15, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "how-to-find-your-first-50-cold-email-prospects",
+    title: "How to Find Your First 50 Cold Email Prospects (Without Buying a List)",
+    description:
+      "Where to find your first 50 cold email prospects without buying a list - free directory tiers, competitor logo mining, and research that actually scales.",
+    date: "Oct 15, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-subject-lines",
+    title: "Cold Email Subject Lines: The Complete 2026 Cheat Sheet",
+    description:
+      "The honest cheat sheet for cold email subject lines that get opened: length, specificity, and the spam-filter traps to avoid.",
+    date: "Oct 15, 2026",
+    readTime: "5 min read",
+  },  {
     slug: "cold-email-stack-2026",
     title: "The Cold Email Stack in 2026: The Only Tools You Need",
     description:
