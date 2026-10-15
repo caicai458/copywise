@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://copywise.vercel.app";
+const siteUrl = "https://www.getcopywise.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const blogs = [
@@ -31,6 +31,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "5-cold-email-openers-2026",
     "saas-cold-email-playbook-2026",
     "cold-email-guide",
+    "how-we-got-our-first-10-b2b-saas-users",
+    "cold-email-vs-linkedin-30-minutes",
+    "how-to-find-your-first-50-cold-email-prospects",
     "cold-email-subject-lines",
     "cold-vs-warm-email",
     "cold-email-metrics-2026",
@@ -92,3 +95,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+
