@@ -42,7 +42,7 @@ export default function BlogPost() {
           </p>
           <ul>
             <li>
-              <strong>Personalized > clever.</strong> Subject lines with the prospect&apos;s company name or a specific reference consistently outperform generic &quot;creativity.&quot;
+              <strong>Personalized &gt; clever.</strong> Subject lines with the prospect&apos;s company name or a specific reference consistently outperform generic &quot;creativity.&quot;
             </li>
             <li>
               <strong>Short wins.</strong> 4-8 words outperforms longer lines. The recipient scans it in under a second while half-working.
