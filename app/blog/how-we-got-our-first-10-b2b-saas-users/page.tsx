@@ -48,7 +48,7 @@ export default function BlogPost() {
               Reference something specific about their company — a recent feature launch, a pricing page detail, a blog post they wrote.
             </li>
             <li>
-              Show you understand their buyer. Not &quot;Hi {First Name}&quot; — that&apos;s a template variable, not personalization.
+              Show you understand their buyer. Not &quot;Hi {"{"}First Name{"}"}&quot; — that&apos;s a template variable, not personalization.
             </li>
             <li>
               Be short. 90-120 words. One question. One clear reason to reply.
@@ -112,7 +112,7 @@ export default function BlogPost() {
               [ ] ICP defined down to 50 specific companies
             </li>
             <li>
-              [ ] Cold email: 20-30 tailored/day, verified addresses, bounce <2%
+              [ ] Cold email: 20-30 tailored/day, verified addresses, bounce &lt;2%
             </li>
             <li>
               [ ] Domain warmed up, SPF/DKIM/DMARC in place
