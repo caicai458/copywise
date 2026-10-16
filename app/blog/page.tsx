@@ -5,37 +5,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
-    slug: "how-we-got-our-first-10-b2b-saas-users",
+    slug: "first-10-b2b-saas-users",
     title: "How We Got Our First 10 B2B SaaS Users (No Ads, No Budget)",
     description:
-      "The honest, unglamorous playbook we used to land our first 10 B2B SaaS users - no ads, no budget, just cold email, LinkedIn and consistent outreach.",
-    date: "Oct 15, 2026",
-    readTime: "5 min read",
+      "The honest, unglamorous playbook for getting your first 10 B2B SaaS users with $0 — cold email personalization, deliverability, communities, and the real 3-6 week timeline.",
+    date: "Oct 16, 2026",
+    readTime: "6 min read",
   },
   {
-    slug: "cold-email-vs-linkedin-30-minutes",
-    title: "Cold Email vs LinkedIn Outreach: Where Should a B2B Founder Spend 30 Minutes a Day?",
-    description:
-      "If you have 30 minutes a day and zero customers: spend 20 on cold email, 10 on LinkedIn comments. Here is the split, and why it works.",
-    date: "Oct 15, 2026",
-    readTime: "5 min read",
-  },
-  {
-    slug: "how-to-find-your-first-50-cold-email-prospects",
+    slug: "find-first-50-cold-email-prospects",
     title: "How to Find Your First 50 Cold Email Prospects (Without Buying a List)",
     description:
-      "Where to find your first 50 cold email prospects without buying a list - free directory tiers, competitor logo mining, and research that actually scales.",
-    date: "Oct 15, 2026",
-    readTime: "5 min read",
+      "You don't need a $300 email list to start cold outreach. Here's the free, repeatable process for finding 50 lookalike prospects in a single afternoon.",
+    date: "Oct 16, 2026",
+    readTime: "6 min read",
   },
   {
-    slug: "cold-email-subject-lines",
-    title: "Cold Email Subject Lines: The Complete 2026 Cheat Sheet",
+    slug: "how-to-choose-ai-cold-email-tool-2026",
+    title: "How to Choose an AI Cold Email Tool in 2026",
     description:
-      "The honest cheat sheet for cold email subject lines that get opened: length, specificity, and the spam-filter traps to avoid.",
-    date: "Oct 15, 2026",
-    readTime: "5 min read",
-  },  {
+      "Every week a new AI SDR launches. Here is a 6-step checklist to test any tool in an afternoon — writing quality, deliverability controls, personalization depth, pricing, and compliance.",
+    date: "Oct 13, 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "cold-email-stack-2026",
     title: "The Cold Email Stack in 2026: The Only Tools You Need",
     description:
@@ -298,6 +291,38 @@ const POSTS = [
       "Cold email vs warm email — which one should you be using? Let's break down the pros, cons, and best use cases.",
     date: "Sep 20, 2026",
     readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-vs-ai-sdr-2026",
+    title: "Cold Email vs AI SDR in 2026: Which One Should You Actually Use?",
+    description:
+      "AI SDRs promise hands-off outbound. Cold email writers promise control. The honest tradeoff — and when each makes sense for a small team.",
+    date: "Oct 14, 2026",
+    readTime: "4 min read",
+  },
+  {
+    slug: "ai-cold-email-without-robot",
+    title: "AI Cold Email: 7 Ways to Use AI Without Sounding Like a Robot (2026)",
+    description:
+      "Prospects can smell AI in one glance. 7 ways to use AI the way a good writer uses an editor — and get more replies.",
+    date: "Oct 14, 2026",
+    readTime: "4 min read",
+  },
+  {
+    slug: "best-time-to-send-cold-email-2026",
+    title: "The Best Time to Send Cold Emails in 2026 (Data-Backed Guide)",
+    description:
+      "Tuesday 10am local is a fine default. Personalization and deliverability are the real levers — here's the data.",
+    date: "Oct 14, 2026",
+    readTime: "3 min read",
+  },
+  {
+    slug: "cold-email-frequency-per-day-2026",
+    title: "Cold Email Frequency: How Many Emails Per Day Is Too Many? (2026)",
+    description:
+      "Volume is a trap; relevance is the edge. A safe sending ramp for a new domain in 2026.",
+    date: "Oct 14, 2026",
+    readTime: "3 min read",
   },
 ];
 export default function BlogPage() {
