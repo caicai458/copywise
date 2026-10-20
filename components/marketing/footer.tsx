@@ -108,11 +108,11 @@ export function Footer() {
               <img src="https://appalist.com/assets/images/badge.png" alt="Appa List" height="54" loading="lazy" />
             </a>
 <a target="_blank" href="https://dang.ai" rel="noopener" className="ml-4 inline-block text-xs text-muted-foreground underline">
-              Find more AI tools on Dang.ai
+              Find more AI tools on Dang.ai</a>
             
           <a href="https://openhunts.com" target="_blank" rel="noopener" title="OpenHunts Club">
             <img alt="OpenHunts Club Member" height="105" src="https://cdn.openhunts.com/badges/club.webp" style="width: 195px; height: auto;" width="486" />
-          </a></a>
+          </a>
           </div>
         </div>
       </div>
