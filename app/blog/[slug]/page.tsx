@@ -9,6 +9,105 @@ const POSTS: Record<
   string,
   { title: string; date: string; readTime: string; content: string }
 > = {
+    "cold-email-templates-that-dont-sound-like-templates-2026": {
+      title: "Cold Email Templates That Don't Sound Like Templates (2026)",
+      date: "Oct 20, 2026",
+      readTime: "7 min read",
+      content: `
+# Cold Email Templates That Don't Sound Like Templates (2026)
+
+There is a moment every founder knows: you open a cold email, read two sentences, and think "this is a template." The delete happens before the third sentence. The irony is that almost every effective cold email uses the same skeleton — it is the voice, the reference, and the ask that separate the ones that get replies from the ones that get trashed.
+
+## The skeleton that works
+
+Strip away the fluff and strong cold emails follow four moves, in order:
+
+- **1. The anchor.** A specific, true observation about their company, launch, page, or role. One sentence, no flattery.
+- **2. The bridge.** One line connecting that observation to what you do — no more than a sentence.
+- **3. The proof.** A concrete result or example that makes the bridge credible. A number beats a claim.
+- **4. The ask.** One small, specific next step. Never "let's hop on a call" as the opening ask.
+
+## Template voice vs. human voice
+
+Compare the same email written two ways. The template version:
+
+> Hi [Name], I hope this finds you well. I came across [Company] and was impressed by your [product]. We help companies like yours [benefit]. Would you be open to a quick call this week?
+
+And the version a person would actually send:
+
+> Hey [Name] — saw you shipped [feature] last month. We build [X] for teams that [context], and [customer] used it to [specific result]. Worth a 30-second look?
+
+Same skeleton. The difference is every slot being filled with something real — and the ask being small enough to say yes to.
+
+## Three templates that hold up
+
+**The observation opener** (works best for product companies):
+
+> Hi [Name] — your new [page/feature] caught my eye, specifically [detail]. We help [segment] do [outcome] without [pain], and [reference customer] went from [A] to [B]. If that is relevant, happy to share the 2-minute version.
+
+**The competitor signal** (works best for sales teams):
+
+> Hi [Name] — noticed [competitor] is expanding into [segment]. Teams in that space are starting to [need]. We built [X] to make that [easier/faster]. Open to a quick look?
+
+**The plain truth** (works best for founders reaching founders):
+
+> Hi [Name] — cold emailing you because [specific reason tied to their work]. We do [one thing], and I thought it might help with [their specific problem]. If not, no worries — ignore this.
+
+## How AI fits without killing the voice
+
+The best use of AI here is not "write me a template" — it is drafting a first pass that you personalize hard. Describe the prospect and the product, and a tool like ColdCrow generates an email on this exact skeleton, with subject line options and a deliverability score. You keep the anchor honest and the ask specific; the machine handles the phrasing.
+
+## The rule that beats every template
+
+If you cannot point to the one specific thing you noticed about the person you are emailing, the template is not ready to send. Fix the anchor first. Everything else — subject line, body length, CTA — can be iterated. A template with a real anchor and a small ask will out-perform a perfectly worded blast every time.
+
+Draft your next cold email in about 30 seconds — try ColdCrow free, no signup needed: https://www.getcopywise.com/try
+
+---
+`,
+  },
+    "how-to-reply-to-a-cold-email": {
+      title: "How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders",
+      date: "Oct 20, 2026",
+      readTime: "6 min read",
+      content: `
+# How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders
+
+If you are a founder, your inbox is a battlefield. Twenty cold emails a day, most of them templates, most of them for things you do not need. The standard move is mass delete — and it is mostly right. But a small fraction of cold emails deserve a reply, and the founders who reply selectively build a quiet compounding advantage: they become known as people who answer.
+
+## The 5-minute triage
+
+Do not read cold emails top to bottom. Run each one through three questions, in order:
+
+- **1. Did they reference something specific about you?** Your last launch, a hire, a page, a post. If the email could have been sent to anyone, delete it.
+- **2. Is the ask small and concrete?** "A 30-second look," "a one-line answer," "introduce me to X." Vague asks ("let's hop on a call") get the standard reply: silence.
+- **3. Could this be useful in the next 90 days?** Not today — the next quarter. Tools, intros, and ideas you might need later are worth a two-line reply that keeps the door open.
+
+One "yes" and the email earns a reply. Three "no"s and it goes to trash without guilt.
+
+## The reply templates that cost you nothing
+
+**Not now, not ever:** "Thanks — not a fit right now, but appreciate the personal note. Good luck."
+
+**Mildly interested, busy:** "This is interesting but I'm heads-down this month. Ping me in 6-8 weeks?"
+
+**Actually interested:** "Yes — send me the 2-minute version, and loop [relevant person]."
+
+Two lines each. No apologies, no essays. The sender gets a signal, you keep your inbox moving, and — this matters — reply rate is reciprocal. People who reply get better cold emails over time, because good senders learn who answers.
+
+## The asymmetry trick
+
+Most founders only reply when the email benefits them. The smarter move: reply when the email is well-crafted, even if the offer is not for you. A two-line "good email, not a fit" makes you memorable to someone who emails hundreds of founders a week. That person becomes a referral node. The cost is thirty seconds; the expected value compounds.
+
+## If you are on the sending side
+
+The lesson cuts both ways. If you want replies, write the kind of email this framework would answer: specific, small ask, useful. That is exactly what ColdCrow drafts — personalized cold emails built on real signals, with a deliverability score and a subject line that earns the open. You bring the judgment; it kills the blank page.
+
+See it in action — try ColdCrow free, no signup needed: https://www.getcopywise.com/try
+
+---
+`,
+  },
     "cold-email-personalization-scale": {
       title: "Cold Email Personalization at Scale: How to Sound Human in 200 Emails a Day",
       date: "Oct 8, 2026",
@@ -82,7 +181,7 @@ Fewer, better, researched — every time.
 
 ---
 
-*ColdCrow turns a one-line product description into a personalized cold email with a deliverability score — so the research you do goes into an email that actually gets sent. Try it free: copywise.vercel.app/try*
+*ColdCrow turns a one-line product description into a personalized cold email with a deliverability score — so the research you do goes into an email that actually gets sent. Try it free: www.getcopywise.com/try*
 
 `,
   },
@@ -166,7 +265,7 @@ Research the prospect, write the specific line, and let the body do the rest.
 
 ---
 
-*ColdCrow writes the subject line and body together — personalized to the prospect, with a deliverability score before you send. Try it free: copywise.vercel.app/try*
+*ColdCrow writes the subject line and body together — personalized to the prospect, with a deliverability score before you send. Try it free: www.getcopywise.com/try*
 
 `,
   },
@@ -262,7 +361,7 @@ Agency cold email is a numbers game with a quality filter. Research the trigger,
 
 ---
 
-*ColdCrow turns a one-line description of your agency into a personalized cold email with a deliverability score — so the research you do turns into emails that actually get sent. Try it free: copywise.vercel.app/try*
+*ColdCrow turns a one-line description of your agency into a personalized cold email with a deliverability score — so the research you do turns into emails that actually get sent. Try it free: www.getcopywise.com/try*
 
 `,
   },
@@ -319,7 +418,7 @@ One well-researched email to the right person outperforms ten templates to the w
 
 ---
 
-*ColdCrow helps you turn a one-line product description into personalized cold emails in seconds — with a deliverability score before you send. Try it free: copywise.vercel.app/try*
+*ColdCrow helps you turn a one-line product description into personalized cold emails in seconds — with a deliverability score before you send. Try it free: www.getcopywise.com/try*
 
 `,
   },
@@ -386,7 +485,7 @@ One hundred relevant emails that get 8% replies will outperform a thousand gener
 
 ---
 
-*ColdCrow scores your cold email for deliverability before you send — so you fix problems in the draft, not after 500 sends. Try it free: copywise.vercel.app/try*
+*ColdCrow scores your cold email for deliverability before you send — so you fix problems in the draft, not after 500 sends. Try it free: www.getcopywise.com/try*
 
 `,
   },
@@ -587,7 +686,7 @@ It's an AI cold email generator that:
 
 You can try it for free — 5 emails per day, no credit card required.
 
-[Try Copywise free →](https://copywise.vercel.app)
+[Try Copywise free →](https://www.getcopywise.com)
 
 ## Final Thoughts
 
@@ -703,7 +802,7 @@ The best way to find what works for your audience is to test:
 
 With Copywise, you can automatically generate multiple subject line options and pick the best one.
 
-[Try Copywise free →](https://copywise.vercel.app)
+[Try Copywise free →](https://www.getcopywise.com)
 
 ## Final Tip
 
@@ -792,7 +891,7 @@ With AI tools like Copywise, you can:
 
 This means you can send more personalized cold emails without spending hours writing each one.
 
-[Try Copywise free →](https://copywise.vercel.app)
+[Try Copywise free →](https://www.getcopywise.com)
 
 ## Final Thoughts
 
@@ -1155,7 +1254,7 @@ ColdCrow generates your initial email and follow-up sequence in one pass:
 - **Follow-ups with new angles** — insight, question, or polite breakup
 - **Deliverability score** on every touch so you know what to fix
 Instead of writing 3 emails per prospect by hand, you review 3 drafts and send.
-[Try ColdCrow free →](https://copywise.vercel.app)
+[Try ColdCrow free →](https://www.getcopywise.com)
 ## Final Thoughts
 Follow-up isn't about persistence — it's about sequence.
 Three touches, each adding value, spaced over a week. That's the framework.
@@ -1217,7 +1316,7 @@ ColdCrow doesn't send your email — but it makes deliverability a first-class c
 - **Personalization built in** so engagement signals work for you
 - **Follow-up sequences** that avoid spammy repetition
 Write better, more personal emails, and the inbox placement problem gets dramatically smaller.
-[Try ColdCrow free →](https://copywise.vercel.app)
+[Try ColdCrow free →](https://www.getcopywise.com)
 ## Final Thoughts
 Deliverability is boring, and that's exactly why it wins.
 Set up SPF, DKIM and DMARC. Warm up your domain. Write emails people actually reply to.
@@ -1319,7 +1418,7 @@ Want this built for your actual email? We made a free tool for exactly this:
 
 **Paste your cold email → get a Day 3 / Day 7 / Day 14 follow-up plan** with low-pressure, ready-to-send copy.
 
-Try it free: https://copywise.vercel.app/followup
+Try it free: https://www.getcopywise.com/followup
 `
   },
     "cold-email-deliverability-mistakes": {
@@ -1366,7 +1465,7 @@ Deliverability is a checklist, not a mystery. And personalization is the one var
 
 We built ColdCrow to make the personalization part instant: describe a prospect, get a personalized cold email with a **deliverability score** in seconds — so you never send a spam-suspect email again.
 
-Try it free — no signup needed: https://copywise.vercel.app/try
+Try it free — no signup needed: https://www.getcopywise.com/try
 `
   },
     "cold-email-vs-linkedin-outreach": {
@@ -1467,7 +1566,7 @@ If 10 minutes still feels like too much, the writing is the bottleneck — not t
 
 ColdCrow does the writing: describe a prospect, get a **personalized cold email with a deliverability score** in seconds. You keep the research; the first draft is instant.
 
-Try it free — no signup: https://copywise.vercel.app/try
+Try it free — no signup: https://www.getcopywise.com/try
 `
   },
   };
