@@ -111,7 +111,7 @@ export function Footer() {
               Find more AI tools on Dang.ai</a>
             
           <a href="https://openhunts.com" target="_blank" rel="noopener" title="OpenHunts Club">
-            <img alt="OpenHunts Club Member" height="105" src="https://cdn.openhunts.com/badges/club.webp" style="width: 195px; height: auto;" width="486" />
+            <img alt="OpenHunts Club Member" height="105" src="https://cdn.openhunts.com/badges/club.webp" style={{width: '195px', height: 'auto'}} width="486" />
           </a>
           </div>
         </div>
