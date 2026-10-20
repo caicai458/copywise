@@ -3,6 +3,10 @@ const siteUrl = "https://www.getcopywise.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const blogs = [
+    "how-to-reply-to-a-cold-email",
+    "cold-email-templates-that-dont-sound-like-templates-2026",
+    "how-to-reply-to-a-cold-email",
+    "cold-email-templates-that-dont-sound-like-templates-2026",
     "first-10-b2b-saas-users",
     "find-first-50-cold-email-prospects",
     "4-email-follow-up-sequence",
