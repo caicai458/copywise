@@ -5,6 +5,38 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "how-to-reply-to-a-cold-email",
+    title: "How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders",
+    description:
+      "You get 20 cold emails a day. Most go to trash. Here is a 5-minute framework for replying to the few that deserve one — and why selective replies compound in your favor.",
+    date: "Oct 20, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-templates-that-dont-sound-like-templates-2026",
+    title: "Cold Email Templates That Don't Sound Like Templates (2026)",
+    description:
+      "Most cold email templates read as templates the moment they land. Here is how to keep the structure that works and lose the voice that gets deleted — with real examples.",
+    date: "Oct 20, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "how-to-reply-to-a-cold-email",
+    title: "How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders",
+    description:
+      "You get 20 cold emails a day. Most go to trash. Here is a 5-minute framework for replying to the few that deserve one — and why selective replies compound in your favor.",
+    date: "Oct 20, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-templates-that-dont-sound-like-templates-2026",
+    title: "Cold Email Templates That Don't Sound Like Templates (2026)",
+    description:
+      "Most cold email templates read as templates the moment they land. Here is how to keep the structure that works and lose the voice that gets deleted — with real examples.",
+    date: "Oct 20, 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "first-10-b2b-saas-users",
     title: "How We Got Our First 10 B2B SaaS Users (No Ads, No Budget)",
     description:
