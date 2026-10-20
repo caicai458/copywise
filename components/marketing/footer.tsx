@@ -32,6 +32,14 @@ export function Footer() {
               AI-powered copywriting for modern businesses. Write emails, social
               posts, and ads that convert.
             </p>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <a href="https://indexof.ai/tool/coldcrow-idxc7ebti?ref=coldcrow-idxc7ebti" target="_blank" rel="noopener">
+                <img src="https://indexof.ai/badge-light.svg" alt="Featured on IndexOf.AI" width="200" height="40" />
+              </a>
+              <a href="https://aidreamhub.com" target="_blank" rel="noopener">
+                <img src="https://aidreamhub.com/api/badge" alt="Featured on AI Dreamhub" width="200" height="54" />
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="text-sm font-semibold">Product</h3>
@@ -105,3 +113,5 @@ export function Footer() {
     </footer>
   );
 }
+
+
