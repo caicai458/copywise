@@ -38,6 +38,9 @@ export function Footer() {
               </a>
               <a href="https://aidreamhub.com" target="_blank" rel="noopener">
                 <img src="https://aidreamhub.com/api/badge" alt="Featured on AI Dreamhub" width="200" height="54" />
+              <a href="https://nicklaunches.com/products/coldcrow/" target="_blank" rel="noopener">
+                <img src="https://nicklaunches.com/badges/featured-dark.png" alt="ColdCrow on Nick Launches" width="244" height="56" />
+              </a>
               </a>
             </div>
           </div>
