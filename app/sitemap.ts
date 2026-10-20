@@ -5,8 +5,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogs = [
     "how-to-reply-to-a-cold-email",
     "cold-email-templates-that-dont-sound-like-templates-2026",
-    "how-to-reply-to-a-cold-email",
-    "cold-email-templates-that-dont-sound-like-templates-2026",
     "first-10-b2b-saas-users",
     "find-first-50-cold-email-prospects",
     "4-email-follow-up-sequence",
@@ -72,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "warmup-scores-lie-2026",
     "why-cold-emails-go-to-spam-2026",
     "write-cold-email-10-minutes",
-  ];
+  ]
   return [
     {
       url: `${siteUrl}/`,
@@ -124,3 +122,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+
