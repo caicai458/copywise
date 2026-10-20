@@ -33,6 +33,7 @@ export function Footer() {
               posts, and ads that convert.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3">
+              <a href="https://theaidirectory.ai" target="_blank" rel="noopener noreferrer" className="ml-4 inline-block text-xs text-muted-foreground underline">AI Tools Directory</a>
               <a href="https://indexof.ai/tool/coldcrow-idxc7ebti?ref=coldcrow-idxc7ebti" target="_blank" rel="noopener">
                 <img src="https://indexof.ai/badge-light.svg" alt="Featured on IndexOf.AI" width="200" height="40" />
               </a>
