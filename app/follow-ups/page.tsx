@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Follow-Up Sequences | ColdCrow",
+  title: "Follow-Up Sequences",
   description:
     "Most cold email replies come from the follow-up, not the first message. See the 3-touch sequence that works, when to send each touch, and how ColdCrow drafts the follow-ups for you.",
 };
