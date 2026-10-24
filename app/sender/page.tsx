@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cold Email Sender | ColdCrow",
+  title: "Cold Email Sender",
   description:
     "Compose and send personalized cold emails from your own inbox. ColdCrow writes the email, your mailbox sends it.",
 };
