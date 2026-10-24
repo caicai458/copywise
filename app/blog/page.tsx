@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "sender-reputation-7-signals",
+    title: "Sender Reputation: 7 Signals Email Providers Check Before You Hit Send",
+    description:
+      "Why your cold emails land in spam even with a perfect subject line. The 7 sender-reputation signals providers actually check — and how to fix each one for free.",
+    date: "Oct 24, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "ai-tool-directories-for-saas-2026",
     title: "7 Free AI Tool Directories to Get Your SaaS Listed in 2026",
     description:
