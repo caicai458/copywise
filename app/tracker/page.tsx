@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cold Email Tracker | ColdCrow",
+  title: "Cold Email Tracker",
   description:
     "Track cold email replies and follow-ups. Log every prospect, their status, and the next action.",
 };
