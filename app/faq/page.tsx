@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "FAQ | ColdCrow",
+  title: "FAQ",
   description:
     "Answers about how ColdCrow works, the free trial, pricing, deliverability scoring, data privacy, and support — before you sign up.",
 };
