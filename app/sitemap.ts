@@ -64,13 +64,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "personalization-at-scale",
     "personalization-vs-automation",
     "saas-cold-email-playbook-2026",
+    "sender-reputation-7-signals",
     "signal-based-outreach",
     "subject-lines-that-get-opened",
     "the-psychology-of-cold-email",
     "warmup-scores-lie-2026",
     "why-cold-emails-go-to-spam-2026",
     "write-cold-email-10-minutes",
-  ]
+  ];
   return [
     {
       url: `${siteUrl}/`,
@@ -95,6 +96,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: `${siteUrl}/faq`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/follow-ups`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/sender`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/tracker`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/templates`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/affiliate`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
     ...blogs.map((slug) => ({
       url: `${siteUrl}/blog/${slug}`,
@@ -122,4 +159,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
-
