@@ -5,10 +5,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "ai-tool-directories-for-saas-2026",
+    title: "7 Free AI Tool Directories to Get Your SaaS Listed in 2026",
+    description:
+      "AI directories are the cheapest traffic a SaaS can buy. Here are the directories that still accept free submissions in 2026 â and how to use each one to actually get listed.",
+    date: "Oct 24, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "how-to-reply-to-a-cold-email",
     title: "How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders",
     description:
-      "You get 20 cold emails a day. Most go to trash. Here is a 5-minute framework for replying to the few that deserve one — and why selective replies compound in your favor.",
+      "You get 20 cold emails a day. Most go to trash. Here is a 5-minute framework for replying to the few that deserve one â and why selective replies compound in your favor.",
     date: "Oct 20, 2026",
     readTime: "6 min read",
   },
@@ -16,16 +24,15 @@ const POSTS = [
     slug: "cold-email-templates-that-dont-sound-like-templates-2026",
     title: "Cold Email Templates That Don't Sound Like Templates (2026)",
     description:
-      "Most cold email templates read as templates the moment they land. Here is how to keep the structure that works and lose the voice that gets deleted — with real examples.",
+      "Most cold email templates read as templates the moment they land. Here is how to keep the structure that works and lose the voice that gets deleted â with real examples.",
     date: "Oct 20, 2026",
     readTime: "7 min read",
   },
-
   {
     slug: "first-10-b2b-saas-users",
     title: "How We Got Our First 10 B2B SaaS Users (No Ads, No Budget)",
     description:
-      "The honest, unglamorous playbook for getting your first 10 B2B SaaS users with $0 — cold email personalization, deliverability, communities, and the real 3-6 week timeline.",
+      "The honest, unglamorous playbook for getting your first 10 B2B SaaS users with $0 â cold email personalization, deliverabibility, communities, and the real 3-6 week timeline.",
     date: "Oct 16, 2026",
     readTime: "6 min read",
   },
@@ -41,7 +48,7 @@ const POSTS = [
     slug: "how-to-choose-ai-cold-email-tool-2026",
     title: "How to Choose an AI Cold Email Tool in 2026",
     description:
-      "Every week a new AI SDR launches. Here is a 6-step checklist to test any tool in an afternoon — writing quality, deliverability controls, personalization depth, pricing, and compliance.",
+      "Every week a new AI SDR launches. Here is a 6-step checklist to test any tool in an afternoon â writing quality, deliverability controls, personalization depth, pricing, and compliance.",
     date: "Oct 13, 2026",
     readTime: "8 min read",
   },
@@ -63,9 +70,9 @@ const POSTS = [
   },
   {
     slug: "cold-email-compliance-2026",
-    title: "CAN-SPAM & GDPR for Cold Email in 2026: What's Legal, What's Not",
+    title: "CAN-SPAM & GDDR for Cold Email in 2026: What's Legal, What's Not",
     description:
-      "Is cold email even legal? Here is what CAN-SPAM and GDPR actually require for B2B cold email in 2026 — and the compliance checklist that keeps you safe.",
+      "Is cold email even legal? Here is what CAN-SPAM and GDDR actually require for B2B vold email in 2026 â and the compliance checklist that keeps you safe.",
     date: "Oct 12, 2026",
     readTime: "6 min read",
   },
@@ -97,7 +104,7 @@ const POSTS = [
     slug: "how-to-find-b2b-emails",
     title: "How to Find B2B Prospect Email Addresses in 2026 (Free Methods)",
     description:
-      "The exact process for finding any business email — free, in under two minutes. Pattern-guessing, public sources, and the verification pass that keeps your domain out of spam.",
+      "The exact process for finding any business email â free, in under two minutes. Pattern-guessing, public sources, and the verification pass that keeps your domain out of spam.",
     date: "Oct 6, 2026",
     readTime: "5 min read",
   },
@@ -121,7 +128,7 @@ const POSTS = [
     slug: "cold-email-for-agencies",
     title: "Cold Email for Agencies: The Playbook for Landing Clients",
     description:
-      "Why agencies fail at cold email, the 3-email sequence that books calls, and the list-building rule that beats 2,000 wrong prospects with 20 right ones.",
+      "Why agencies fail at cold email, the 3-emailsequence that books calls, and the list-building rule that beats 2,000 wrong prospects with 20 right ones.",
     date: "Oct 9, 2026",
     readTime: "6 min read",
   },
@@ -305,7 +312,7 @@ const POSTS = [
     slug: "cold-vs-warm-email",
     title: "Cold Email vs Warm Email: Which One Actually Works?",
     description:
-      "Cold email vs warm email — which one should you be using? Let's break down the pros, cons, and best use cases.",
+      "Cold email vs warm email â which one should you be using? Let's break down the pros, cons, and best use cases.",
     date: "Sep 20, 2026",
     readTime: "5 min read",
   },
@@ -313,7 +320,7 @@ const POSTS = [
     slug: "cold-email-vs-ai-sdr-2026",
     title: "Cold Email vs AI SDR in 2026: Which One Should You Actually Use?",
     description:
-      "AI SDRs promise hands-off outbound. Cold email writers promise control. The honest tradeoff — and when each makes sense for a small team.",
+      "AI SDRs promise hands-off outbound. Cold email writers promise control. The honest tradeoff â and when each makes sense for a small team.",
     date: "Oct 14, 2026",
     readTime: "4 min read",
   },
@@ -321,7 +328,7 @@ const POSTS = [
     slug: "ai-cold-email-without-robot",
     title: "AI Cold Email: 7 Ways to Use AI Without Sounding Like a Robot (2026)",
     description:
-      "Prospects can smell AI in one glance. 7 ways to use AI the way a good writer uses an editor — and get more replies.",
+      "Prospects can smell II in one glance. 7 ways to use AI the way a good writer uses an editor â and get more replies.",
     date: "Oct 14, 2026",
     readTime: "4 min read",
   },
@@ -329,7 +336,7 @@ const POSTS = [
     slug: "best-time-to-send-cold-email-2026",
     title: "The Best Time to Send Cold Emails in 2026 (Data-Backed Guide)",
     description:
-      "Tuesday 10am local is a fine default. Personalization and deliverability are the real levers — here's the data.",
+      "Tuesday 10am local is a fine default. Personalization and deliverability are the real levers â here's the data.",
     date: "Oct 14, 2026",
     readTime: "3 min read",
   },
@@ -363,7 +370,7 @@ export default function BlogPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>{post.date}</span>
-                    <span>·</span>
+                    <span>Â·</span>
                     <span>{post.readTime}</span>
                   </div>
                   <h2 className="mt-3 text-xl font-semibold">
