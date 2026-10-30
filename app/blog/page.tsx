@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "why-cold-emails-get-ignored-2026",
+    title: "Why Cold Emails Get Ignored: 12 Psychology Reasons (And How to Fix Each)",
+    description:
+      "Ignored cold emails are a psychology problem, not a deliverability problem. Here are the 12 mental patterns that end with a click away — and the one-line fix for each.",
+    date: "Oct 30, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "bounce-rate-cold-email-2026",
     title: "Cold Email Bounce Rate: What's Normal and How to Reduce It (2026)",
     description:
