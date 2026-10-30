@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "anatomy-of-perfect-cold-email",
     "best-time-to-send-cold-email-2026",
     "bought-lists-are-dead-2026",
+    "bounce-rate-cold-email-2026",
     "cn-cross-border-cold-email",
     "cold-email-ab-testing",
     "cold-email-compliance-2026",
