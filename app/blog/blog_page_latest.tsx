@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "bounce-rate-cold-email-2026",
+    title: "Cold Email Bounce Rate: What's Normal and How to Reduce It (2026)",
+    description:
+      "A 3-5% bounce rate is normal. Above that, your sender reputation starts to burn. Here is how to measure bounce rate the right way and cut it before it cuts your domain.",
+    date: "Oct 30, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "cold-email-vs-linkedin-outreach-2026",
     title: "Cold Email vs LinkedIn Outreach in 2026: What Actually Gets Replies",
     description:
