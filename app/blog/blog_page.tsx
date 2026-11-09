@@ -1,0 +1,434 @@
+import Link from "next/link";
+import { Navbar } from "@/components/marketing/navbar";
+import { Footer } from "@/components/marketing/footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
+const POSTS = [
+  {
+    slug: "cold-email-550-5-4-1-access-denied",
+    title: "550 5.4.1 Access Denied: Why Microsoft 365 Bounces Cold Emails",
+    description:
+      "A 550 5.4.1 Access denied bounce from an outlook.com host is not a bad address. It is the recipient tenant refusing your connection. Here is what triggers it and how to fix each cause.",
+    date: "Nov 9, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "why-cold-emails-get-ignored-2026",
+    title: "Why Cold Emails Get Ignored: 12 Psychology Reasons (And How to Fix Each)",
+    description:
+      "Ignored cold emails are a psychology problem, not a deliverability problem. Here are the 12 mental patterns that end with a click away — and the one-line fix for each.",
+    date: "Oct 30, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "bounce-rate-cold-email-2026",
+    title: "Cold Email Bounce Rate: What's Normal and How to Reduce It (2026)",
+    description:
+      "A 3-5% bounce rate is normal. Above that, your sender reputation starts to burn. Here is how to measure bounce rate the right way and cut it before it cuts your domain.",
+    date: "Oct 30, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "sender-reputation-7-signals",
+    title: "Sender Reputation: 7 Signals Email Providers Check Before You Hit Send",
+    description:
+      "Why your cold emails land in spam even with a perfect subject line. The 7 sender-reputation signals providers actually check — and how to fix each one for free.",
+    date: "Oct 24, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "ai-tool-directories-for-saas-2026",
+    title: "7 Free AI Tool Directories to Get Your SaaS Listed in 2026",
+    description:
+      "AI directories are the cheapest traffic a SaaS can buy. Here are the directories that still accept free submissions in 2026 — and how to use each one to actually get listed.",
+    date: "Oct 24, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "how-to-reply-to-a-cold-email",
+    title: "How to Reply to a Cold Email: The 5-Minute Framework for Busy Founders",
+    description:
+      "You get 20 cold emails a day. Most go to trash. Here is a 5-minute framework for replying to the few that deserve one — and why selective replies compound in your favor.",
+    date: "Oct 20, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-templates-that-dont-sound-like-templates-2026",
+    title: "Cold Email Templates That Don't Sound Like Templates (2026)",
+    description:
+      "Most cold email templates read as templates the moment they land. Here is how to keep the structure that works and lose the voice that gets deleted — with real examples.",
+    date: "Oct 20, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "first-10-b2b-saas-users",
+    title: "How We Got Our First 10 B2B SaaS Users (No Ads, No Budget)",
+    description:
+      "The honest, unglamorous playbook for getting your first 10 B2B SaaS users with $0 — cold email personalization, deliverability, communities, and the real 3-6 week timeline.",
+    date: "Oct 16, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "find-first-50-cold-email-prospects",
+    title: "How to Find Your First 50 Cold Email Prospects (Without Buying a List)",
+    description:
+      "You don't need a $300 email list to start cold outreach. Here's the free, repeatable process for finding 50 lookalike prospects in a single afternoon.",
+    date: "Oct 16, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "how-to-choose-ai-cold-email-tool-2026",
+    title: "How to Choose an AI Cold Email Tool in 2026",
+    description:
+      "Every week a new AI SDR launches. Here is a 6-step checklist to test any tool in an afternoon — writing quality, deliverability controls, personalization depth, pricing, and compliance.",
+    date: "Oct 13, 2026",
+    readTime: "8 min read",
+  },
+  {
+    slug: "cold-email-stack-2026",
+    title: "The Cold Email Stack in 2026: The Only Tools You Need",
+    description:
+      "A complete cold email stack for 2026: domain setup, address verification, sending infrastructure, AI writing, and tracking. Here is the minimal toolset that actually moves reply rates.",
+    date: "Oct 12, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-for-ecommerce-brands",
+    title: "Cold Email for Ecommerce Brands: The 2026 Wholesale & Partnership Playbook",
+    description:
+      "Most ecommerce founders treat cold email as a customer channel. Here is the playbook for using it to win wholesale accounts, B2B partnerships, and distribution deals.",
+    date: "Oct 12, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-compliance-2026",
+    title: "CAN-SPAM & GDPR for Cold Email in 2026: What's Legal, What's Not",
+    description:
+      "Is cold email even legal? Here is what CAN-SPAM and GDPR actually require for B2B cold email in 2026 — and the compliance checklist that keeps you safe.",
+    date: "Oct 12, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-reply-rates-2026",
+    title: "Cold Email Reply Rates in 2026: What's Actually Normal",
+    description:
+      "Average cold email reply rate is 3.4%. Top campaigns clear 10%+. The gap isn't volume - it's relevance. Here is the 2026 benchmark data.",
+    date: "Oct 7, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "how-to-research-a-prospect",
+    title: "How to Research a Prospect in 5 Minutes",
+    description:
+      "A researched first line is the difference between a 0.5% and a 5% reply rate. Here is the 5-minute research loop that makes every email feel personal.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "warmup-scores-lie-2026",
+    title: "Warmup Scores Lie: What Actually Gets Cold Emails Into the Inbox",
+    description:
+      "A warmup score of 90+ while your emails land in spam anyway - the #1 complaint on r/coldemail. What actually moves deliverability in 2026.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "how-to-find-b2b-emails",
+    title: "How to Find B2B Prospect Email Addresses in 2026 (Free Methods)",
+    description:
+      "The exact process for finding any business email — free, in under two minutes. Pattern-guessing, public sources, and the verification pass that keeps your domain out of spam.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "email-domain-warmup-guide",
+    title: "The Email Domain Warmup Guide: Do It Right or Burn Your Domain",
+    description:
+      "A new domain that starts blasting cold email gets burned in a week. The step-by-step warmup schedule, volume ramp, and the mistakes that trigger spam filters.",
+    date: "Oct 5, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "50-personalization-ideas",
+    title: "50 Cold Email Personalization Ideas That Aren't Just 'I Noticed You're a SaaS'",
+    description:
+      "Generic personalization is worse than none. 50 concrete, low-effort personalization angles you can pull from a prospect's public footprint in under two minutes.",
+    date: "Oct 5, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "cold-email-for-agencies",
+    title: "Cold Email for Agencies: The Playbook for Landing Clients",
+    description:
+      "Why agencies fail at cold email, the 3-email sequence that books calls, and the list-building rule that beats 2,000 wrong prospects with 20 right ones.",
+    date: "Oct 9, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-subject-lines-that-get-opened",
+    title: "Cold Email Subject Lines That Get Opened: What Actually Works in 2026",
+    description:
+      "3-5 words beats 8+. Specific beats clever. The four subject line patterns that earn opens - and the patterns that get you spammed.",
+    date: "Oct 8, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-personalization-scale",
+    title: "Cold Email Personalization at Scale: How to Sound Human in 200 Emails a Day",
+    description:
+      "Real personalization doesn't require 30 minutes per prospect. The 80/20 of personalization, a 10-minute research loop, and a template that lets you sound human at volume.",
+    date: "Oct 8, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "how-to-find-right-person-to-email",
+    title: "How to Find the Right Person to Email: ICP Targeting for Cold Outreach",
+    description:
+      "Your reply rate is decided before you write a word - by who you email. A 3-question screen for choosing targets, where to find their emails, and the 100-person test that validates your ICP.",
+    date: "Oct 7, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-metrics-that-matter",
+    title: "Cold Email Metrics That Actually Matter (And the Ones to Ignore)",
+    description:
+      "Reply rate is the only number that reflects whether your message resonated. Which cold email metrics to track, which to ignore, and the five-number dashboard that predicts success.",
+    date: "Oct 7, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-follow-up-framework",
+    title: "The Follow-Up Email That Gets Replies (Day 3/7/14 Framework)",
+    description:
+      "Most cold email replies come from the follow-up, not the first touch - but 90% of senders never send one. Here's the 3-touch rhythm that works without being annoying.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-deliverability-mistakes",
+    title: "Cold Email Deliverability: 9 Mistakes That Send You to Spam",
+    description:
+      "Your cold emails are landing in spam. Here are the 9 mistakes killing your deliverability - and the fixes that get you into the inbox.",
+    date: "Oct 6, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-vs-linkedin-outreach",
+    title: "Cold Email vs. LinkedIn Outreach: Which One Works for B2B?",
+    description:
+      "Cold email and LinkedIn outreach both work - but for different buyers, at different stages. Here's how to pick the right channel for your product.",
+    date: "Oct 6, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "write-cold-email-10-minutes",
+    title: "How to Write a Cold Email in 10 Minutes (Template Inside)",
+    description:
+      "Stop staring at a blank page. Here's a 10-minute cold email writing process that produces personalized, sendable emails - with a template you can steal.",
+    date: "Oct 6, 2026",
+    readTime: "4 min read",
+  },
+  {
+    slug: "cold-email-ab-testing",
+    title: "Cold Email A/B Testing: The Framework That Doubles Reply Rates",
+    description:
+      "You can't improve what you don't measure. Here is the 2026 A/B testing framework for cold email: what to test first, how many variations you need, and the metrics that actually predict replies.",
+    date: "Oct 5, 2026",
+    readTime: "8 min read",
+  },
+  {
+    slug: "how-to-find-email-addresses",
+    title: "How to Find Anyone's Email Address for Cold Outreach (Free Methods)",
+    description:
+      "The #1 excuse for not doing cold outreach is 'I can't find their email.' Here are 7 free methods to find any B2B decision-maker's email in under two minutes - no paid databases required.",
+    date: "Oct 5, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "cold-email-mistakes-2026",
+    title: "7 Cold Email Mistakes Killing Your Reply Rate (2026)",
+    description:
+      "Cold emails fail for the same seven reasons over and over. Here is each mistake, the data behind it, and the exact fix - so your next campaign actually gets replies.",
+    date: "Oct 4, 2026",
+    readTime: "9 min read",
+  },
+  {
+    slug: "cold-email-deliverability-checklist",
+    title: "The 2026 Cold Email Deliverability Checklist (SPF, DKIM, DMARC)",
+    description:
+      "A beautiful cold email means nothing if it lands in spam. Here is the 2026 deliverability checklist: DNS records, warmup, sending volume, link strategy, and the reply habit that keeps your domain healthy.",
+    date: "Oct 4, 2026",
+    readTime: "8 min read",
+  },
+  {
+    slug: "cold-email-follow-up-sequence",
+    title: "The Cold Email Follow-Up Sequence That Actually Gets Replies",
+    description:
+      "Most cold email replies come from the follow-up, not the first touch - but 90% of senders never send one. Here is the day-by-day follow-up sequence, with templates, that turns ignored emails into conversations.",
+    date: "Oct 4, 2026",
+    readTime: "7 min read",
+  },
+  {
+    slug: "cold-email-for-saas-founders",
+    title: "Cold Email for SaaS Founders: The 2026 Playbook",
+    description:
+      "SaaS founders have the unfair advantage of a product people can try. Here is the 2026 cold email playbook for SaaS: the accounts worth emailing, what to say, and how to route every reply to a signup.",
+    date: "Oct 4, 2026",
+    readTime: "10 min read",
+  },
+  {
+    slug: "linkedin-cold-outreach",
+    title: "LinkedIn Cold Outreach: The Playbook That Turns Connections Into Calls",
+    description:
+      "LinkedIn cold outreach still works in 2026 - if you stop sending the same 20-word connection note everyone sends. Here is the playbook: research, a specific opener, and a low-pressure ask that books calls.",
+    date: "Oct 4, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-deliverability-checklist-2026",
+    title: "Cold Email Deliverability in 2026: The Practical Checklist",
+    description:
+      "Cold email only works when it lands in the inbox. This checklist covers SPF/DKIM/DMARC, warmup, sending limits, content signals, and the metrics that matter.",
+    date: "Oct 3, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-follow-up-sequence-2026",
+    title: "Cold Email Follow-Up: The Sequence That Doubles Your Replies",
+    description:
+      "Most cold outreach dies in the first email. Here is the 4-email follow-up sequence that gets 3-4x more replies.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "why-cold-emails-go-to-spam-2026",
+    title: "Why Your Cold Emails Go to Spam (And How to Fix It)",
+    description:
+      "Your cold emails land in spam for three reasons: untrusted sending setup, content that trips filters, and a list full of dead addresses. Here is the fix.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "5-cold-email-openers-2026",
+    title: "5 Cold Email Openers That Actually Get Replies",
+    description:
+      "Your first line decides whether your cold email gets read or deleted in two seconds. Five opener patterns that work in 2026, with real examples.",
+    date: "Oct 3, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "saas-cold-email-playbook-2026",
+    title: "Cold Email for SaaS: The Playbook That Gets 5-10% Reply Rates",
+    description:
+      "Most SaaS founders treat cold email like a lottery. The ones who get real reply rates treat every email like a product launch for one person.",
+    date: "Oct 3, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-email-guide",
+    title: "The Ultimate Guide to Cold Emails That Actually Get Replies (2026)",
+    description:
+      "Cold email isn't dead. Bad cold email is dead. Learn how to write personalized, high-reply-rate cold emails in 2026.",
+    date: "Sep 20, 2026",
+    readTime: "8 min read",
+  },
+  {
+    slug: "cold-email-subject-lines",
+    title: "10 Cold Email Subject Lines That Actually Get Opened",
+    description:
+      "Your subject line is the most important part of your cold email. Here are 10 proven subject lines that get opened.",
+    date: "Sep 20, 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cold-vs-warm-email",
+    title: "Cold Email vs Warm Email: Which One Actually Works?",
+    description:
+      "Cold email vs warm email — which one should you be using? Let's break down the pros, cons, and best use cases.",
+    date: "Sep 20, 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "cold-email-vs-ai-sdr-2026",
+    title: "Cold Email vs AI SDR in 2026: Which One Should You Actually Use?",
+    description:
+      "AI SDRs promise hands-off outbound. Cold email writers promise control. The honest tradeoff — and when each makes sense for a small team.",
+    date: "Oct 14, 2026",
+    readTime: "4 min read",
+  },
+  {
+    slug: "ai-cold-email-without-robot",
+    title: "AI Cold Email: 7 Ways to Use AI Without Sounding Like a Robot (2026)",
+    description:
+      "Prospects can smell AI in one glance. 7 ways to use AI the way a good writer uses an editor — and get more replies.",
+    date: "Oct 14, 2026",
+    readTime: "4 min read",
+  },
+  {
+    slug: "best-time-to-send-cold-email-2026",
+    title: "The Best Time to Send Cold Emails in 2026 (Data-Backed Guide)",
+    description:
+      "Tuesday 10am local is a fine default. Personalization and deliverability are the real levers — here's the data.",
+    date: "Oct 14, 2026",
+    readTime: "3 min read",
+  },
+  {
+    slug: "cold-email-frequency-per-day-2026",
+    title: "Cold Email Frequency: How Many Emails Per Day Is Too Many? (2026)",
+    description:
+      "Volume is a trap; relevance is the edge. A safe sending ramp for a new domain in 2026.",
+    date: "Oct 14, 2026",
+    readTime: "3 min read",
+  },
+];
+export default function BlogPage() {
+  return (
+    <div className="flex min-h-screen flex-1 flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+              Blog
+            </h1>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Tips, guides, and best practices for writing better cold emails
+              and copy that converts.
+            </p>
+          </div>
+          <div className="mt-16 grid gap-6">
+            {POSTS.map((post) => (
+              <Card key={post.slug} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{post.date}</span>
+                    <span>·</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <h2 className="mt-3 text-xl font-semibold">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <p className="mt-2 text-muted-foreground">
+                    {post.description}
+                  </p>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="mt-4 inline-flex items-center text-sm font-medium text-primary hover:underline"
+                  >
+                    Read more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
