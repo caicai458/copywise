@@ -5,6 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 const POSTS = [
   {
+    slug: "cold-email-550-5-4-1-access-denied",
+    title: "550 5.4.1 Access Denied: Why Microsoft 365 Bounces Cold Emails",
+    description:
+      "A 550 5.4.1 Access denied bounce from an outlook.com host is not a bad address. It is the recipient tenant refusing your connection. Here is what triggers it and how to fix each cause.",
+    date: "Nov 9, 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "why-cold-emails-get-ignored-2026",
     title: "Why Cold Emails Get Ignored: 12 Psychology Reasons (And How to Fix Each)",
     description:
